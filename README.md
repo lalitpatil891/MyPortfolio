@@ -5,4 +5,4 @@
     <a href="#"><img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26.svg?logo=html5&logoColor=white"></a>
 </p>
 
-## See MyPortfolio [SEE LIVE](https://lalitpatil891.github.io/LalitPortfolio/) 
+## See MyPortfolio: [GO LIVE](https://lalitpatil891.github.io/LalitPortfolio/) 
