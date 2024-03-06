@@ -6,3 +6,17 @@
 </p>
 
 ## See MyPortfolio: [GO LIVE](https://lalitpatil891.github.io/LalitPortfolio/) 
+
+### ScreenShots
+![Home](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/d23002c9-3328-4b42-a17d-a1f90163ad27) 
+<hr>
+![About](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/ec30ca21-ef86-4d01-8a61-0d020beb9fec)
+<hr>
+![Education](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/0eb9244a-d87c-416e-822c-f020855c5d47)
+<hr>
+![Skills](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/ab2ba201-683d-4d6d-8806-2d6410731cec)
+<hr>
+![Project](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/dcdbb8c3-30ec-483d-a6b1-f89c40d6d817)
+<hr>
+![Footer](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/6632c1be-300a-4c8d-9ec5-e24ea2dbd7b7)
+
