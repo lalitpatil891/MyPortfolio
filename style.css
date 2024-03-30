@@ -39,6 +39,7 @@ body {
         position: sticky;
         top: 0;
         font-size: 1.2vw;
+        z-index: 99;
     }
 
     .logo {
@@ -66,8 +67,6 @@ body {
         transform: rotate(2deg);
         transition: 420ms;
         font-weight: 600;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    
 
     }
 
@@ -170,26 +169,18 @@ body {
         color: #9b4819;
     }
 
+   .btn3 {
 
-    .btn3 {
-
-        width: auto;
-        margin: 20px auto;
-        text-align: center;
         border: 1px solid #9b4819;
-        /* border: none; */
         color: #9b4819;
-        background-color: #f4f1e8;
         padding: 1px 5px;
-        font-size: 22px;
+        font-size: 1.2vw;
         border-radius: 8px;
-        margin-top: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      
+        background-color: #f4f1e8;
+
     }
 
     .btn3:hover {
-
         font-weight: 600;
         padding: 2px 6px;
         border-radius: 8px;
@@ -245,7 +236,7 @@ body {
     .about-para {
         width: 500px;
         text-align: justify;
-        font-size: 20px;
+        font-size: 22px;
         padding: 10px;
         padding-left: 0px;
     }
@@ -272,23 +263,25 @@ body {
         margin: 20px auto;
         text-align: center;
         border: 1px solid #9b4819;
-        /* border: none; */
         color: #9b4819;
-        background-color: #f4f1e8;
         padding: 1px 5px;
         font-size: 22px;
         border-radius: 8px;
         margin-top: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        
     }
 
     .btn4:hover {
-        font-weight: 600;
-        padding: 2px 6px;
+        width: auto;
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid #9b4819;
+        color: #9b4819;
+        padding: 1px 5px;
+        font-size: 22px;
         border-radius: 8px;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-        transition: 450ms;
-        transform: rotate(-2deg);
+        margin-top: 10px;
+        font-weight: 600;
     }
 
     /* --------------------BACKGROUND Educationj----------------- */
@@ -524,7 +517,7 @@ body {
         width: 80%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between; 
+        justify-content:space-evenly;
         flex-wrap: wrap;
     }
 
@@ -541,7 +534,7 @@ body {
         /* border: 1px solid #9b4819;  */
         border-top-left-radius: 14px;
         border-top-right-radius: 14px;
-        /* height: 550px; */
+        height: fit-content;
         padding: 10px;
         margin-bottom: 40px;
         border-radius: 18px;
@@ -580,6 +573,7 @@ body {
 
     .project-desc {
         list-style: none;
+        margin-bottom: 5px;
     }
 
     .languages {
@@ -602,6 +596,7 @@ body {
 
     .duration {
         color: gray;
+        padding: 5px 0;
     }
 
     .project-box-btn {
@@ -814,7 +809,7 @@ body {
         position: sticky;
         top: 0px;
         font-size: 1.20vw;
-
+         z-index: 3; 
     }
 
     .logo {
@@ -918,6 +913,7 @@ body {
         padding: 10vh 0 10vh 0;
         background-color: #9b4819;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        z-index: 4;
     }
 
     .title-flex {
@@ -1036,6 +1032,7 @@ body {
         /* height: 100%; */
         /* border: 1px solid saddlebrown;   */
         padding: 60px 0;
+        z-index: 1;
     }
 
     .about-main {
@@ -1082,7 +1079,7 @@ body {
         width: 100%;
         margin-top: -10px;
         text-align: justify;
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
     }
 
@@ -1134,6 +1131,7 @@ body {
         /* background-color: aquamarine; */
         padding-top: 50px;
         padding-bottom: 180px;
+        z-index:1;
 
     }
 
@@ -1219,6 +1217,7 @@ body {
         /* border: 1px solid red; */
         padding-bottom: 150px;
         padding-top: 80px;
+        z-index: 1;
     }
 
     .container-5 {
@@ -1363,6 +1362,7 @@ body {
         padding-bottom: 80px;
         padding-top: 40px;
         /* background-color: lightgreen; */
+        z-index: 1;
     }
 
     .project-box-main {
@@ -1390,6 +1390,7 @@ body {
         border-radius: 18px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         padding: 12px;
+        z-index: 1;
     }
 
    
@@ -1448,6 +1449,7 @@ body {
 
     .duration {
         color: gray;
+        padding: 3px 0;
     }
 
     .project-box-btn {
@@ -1521,6 +1523,7 @@ body {
         padding-top: 80px;
         padding-bottom: 10px;
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        z-index: 1;
     }
 
     .social {
