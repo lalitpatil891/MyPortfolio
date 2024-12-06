@@ -236,7 +236,7 @@ body {
     .about-para {
         width: 500px;
         text-align: justify;
-        font-size: 22px;
+        font-size: 18px;
         padding: 10px;
         padding-left: 0px;
     }
@@ -297,6 +297,7 @@ body {
 
     .background {
         width: 80%;
+        
         margin: 0 auto;
         padding: 20px;
         /* border: 1px solid #000000; */
@@ -311,13 +312,15 @@ body {
     }
 
     .bg-box-main {
+       /* border: 1px solid red; */
         width: 80%;
+        gap : 20px;
         display: flex;
         flex-wrap: wrap;
         margin: 10px auto;
         /* border: solid sienna; */
-        justify-content: space-between;
-        align-items: center;
+        /*justify-content:space-around;*/
+       /* align-items: center;*/
 
 
     }
@@ -370,6 +373,20 @@ body {
         height: 100px;
     }
 
+    /*--------------------certificates-------------------*/
+
+ 
+     .bg-box-cert {
+         width: 100%;
+         margin: 10px auto;
+         /* border: 1px solid sienna; */
+         /* text-align: center; */
+         padding: 20px;
+         border-radius: 18px;
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      
+     }
+
     /*---------------SKILLS-------------------*/
 
     #skills {
@@ -383,7 +400,8 @@ body {
     }
 
     .container-5 {
-        width: 80%;
+        /* border: 1px solid red; */
+        width: 70%;
         margin: 0px auto;
         display: block;
         color: black;
@@ -453,53 +471,58 @@ body {
     }
 
     .html {
-        width: 85%;
+        width: 95%;
         background-color: #9b4819;
         /* plum,gold,palevioletred,coral,burlywood,sandybrown,aquamarine,slateblue */
     }
 
     .css {
-        width: 60%;
+        width: 90%;
         background-color: #9b4819;
     }
 
     .bootstrap {
-        width: 80%;
+        width: 65%;
         background-color: #9b4819;
     }
 
     .java {
-        width: 70%;
+        width: 55%;
         background-color: #9b4819;
     }
 
     .react {
-        width: 70%;
+        width: 60%;
         background-color: #9b4819;
     }
 
-    .spring-boot {
-        width: 70%;
+    .javascript {
+        width: 50%;
         background-color: #9b4819;
     }
 
     .mysql {
-        width: 60%;
+        width: 75%;
         background-color: #9b4819;
     }
 
     .git {
-        width: 75%;
+        width: 50%;
+        background-color: #9b4819;
+    }
+
+    .php {
+        width: 50%;
         background-color: #9b4819;
     }
 
     .c {
-        width: 60%;
+        width: 90%;
         background-color: #9b4819;
     }
 
-    .c-plus {
-        width: 75%;
+    .oracle {
+        width: 35%;
         background-color: #9b4819;
     }
 
@@ -1170,6 +1193,19 @@ body {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
 
+    .bg-box-cert {
+        width: 350px;
+        margin: 10px auto;
+        /* border: 1px solid #9b4819; */
+        padding: 10px;
+        border-radius: 18px;
+        text-align: center;
+        text-align: justify;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+
+
     .bg-box:hover {
         width: 350px;
         margin: 10px auto;
@@ -1293,14 +1329,14 @@ body {
     }
 
     .html {
-        width: 88%;
+        width: 95%;
         font-size: 14px;
         background-color: #9b4819;
         /* plum,gold,palevioletred,coral,burlywood,sandybrown,aquamarine,slateblue */
     }
 
     .css {
-        width: 85%;
+        width: 90%;
         font-size: 14px;
         background-color: #9b4819;
     }
@@ -1318,13 +1354,13 @@ body {
     }
 
     .react {
-        width: 70%;
+        width: 60%;
         font-size: 14px;
         background-color: #9b4819;
     }
 
-    .spring-boot {
-        width: 70%;
+    .javascript {
+        width: 50%;
         font-size: 14px;
         background-color: #9b4819;
     }
@@ -1341,14 +1377,20 @@ body {
         background-color: #9b4819;
     }
 
-    .c {
-        width: 80%;
+    .php {
+        width: 50%;
         font-size: 14px;
         background-color: #9b4819;
     }
 
-    .c-plus {
-        width: 65%;
+    .c {
+        width: 90%;
+        font-size: 14px;
+        background-color: #9b4819;
+    }
+
+    .oracle {
+        width: 35%;
         font-size: 14px;
         background-color: #9b4819;
     }
