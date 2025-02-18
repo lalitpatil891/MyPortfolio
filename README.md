@@ -5,7 +5,7 @@
     <a href="#"><img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26.svg?logo=html5&logoColor=white"></a>
 </p>
 
-## See MyPortfolio: [GO LIVE](https://lalitpatil891.github.io/LalitPortfolio/) 
+## See MyPortfolio: [GO LIVE](https://lalitpatil891.github.io/MyPortfolio/) 
 
 ### ScreenShots
 ![Home](https://github.com/lalitpatil891/LalitPortfolio/assets/114104065/d23002c9-3328-4b42-a17d-a1f90163ad27) 
