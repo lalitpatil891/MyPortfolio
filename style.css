@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    caret-color: transparent;
+
 }
 
 html,
@@ -58,6 +60,7 @@ body {
         padding: 2px 6px;
         border-radius: 12px;
         display: block;
+
     }
 
     .li-nav:hover {
@@ -67,7 +70,6 @@ body {
         transform: rotate(2deg);
         transition: 420ms;
         font-weight: 600;
-
     }
 
 
@@ -101,7 +103,7 @@ body {
         align-items: center;
         gap: 10px;
         animation-name: entry;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-fill-mode: forwards;
     }
 
@@ -114,47 +116,39 @@ body {
     }
 
     .title-flex-1 {
-        font-size: 7vw;
-        margin-top: 200px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-style: italic
-    }
-
-    .title-flex-1:hover {
-        font-size: 8vw;
+        font-size: 5vw;
         margin-top: 200px;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: italic;
+        transition: all 0.8s ease;
+    }
+
+    .title-flex-1:hover {
+        font-size: 6vw;
         transform: rotate(-2deg);
-        transition: 1s;
     }
 
     .title-flex-2 {
         color: #9b4819;
-        font-size: 7vw;
+        font-size: 5vw;
         margin-top: 200px;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: normal;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); /* smoother */
     }
 
     .title-flex-2:hover {
-        color: #9b4819;
-        font-size: 8vw;
-        margin-top: 200px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-style: normal;
+        font-size: 6vw;
         transform: rotate(2deg);
-        transition: 1s;
+        /* Again, only add what actually changes on hover */
     }
+
 
     .caption {
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.5vw;
         margin-top: 2vw;
     }
 
@@ -268,7 +262,7 @@ body {
         font-size: 22px;
         border-radius: 8px;
         margin-top: 10px;
-        
+
     }
 
     .btn4:hover {
@@ -284,7 +278,7 @@ body {
         font-weight: 600;
     }
 
-    /* --------------------BACKGROUND Educationj----------------- */
+    /* --------------------BACKGROUND Education----------------- */
     .container-3 {
         width: 100%;
         height: auto;
@@ -297,7 +291,7 @@ body {
 
     .background {
         width: 80%;
-        
+
         margin: 0 auto;
         padding: 20px;
         /* border: 1px solid #000000; */
@@ -333,7 +327,7 @@ body {
         padding: 20px;
         border-radius: 18px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-     
+
     }
 
     .bg-box:hover {
@@ -375,7 +369,7 @@ body {
 
     /*--------------------certificates-------------------*/
 
- 
+
      .bg-box-cert {
          width: 100%;
          margin: 10px auto;
@@ -384,7 +378,6 @@ body {
          padding: 20px;
          border-radius: 18px;
          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      
      }
 
     /*---------------SKILLS-------------------*/
@@ -392,19 +385,16 @@ body {
     #skills {
         width: 100%;
         margin-top: 10px;
-
         height: auto;
-        /* border: 1px solid red; */
         padding-bottom: 250px;
         padding-top: 80px;
     }
 
     .container-5 {
         /* border: 1px solid red; */
-        width: 70%;
+        width: 80%;
         margin: 0px auto;
         display: block;
-        color: black;
         font-size: 18px;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -414,7 +404,7 @@ body {
 
     .title-text {
         padding-top: 20px;
-        font-size: 38px;
+        font-size: 40px;
         font-weight: 500;
         color: #9b4819;
         margin-bottom: 30px;
@@ -422,35 +412,50 @@ body {
     }
 
     .progress-group {
-        width: 45%;
+        border: 1px solid #9b4819;
+        border-radius: 10px;
+        margin: 20px 20px;
+        width: 150px;
         gap: 20px;
-        padding: 0px;
+        padding: 20px;
         will-change: transform;
         transition: transform 450ms;
+        display: flex;
+        flex-direction: column;
+        transition: border-radius 0.8s ease;
+
     }
 
     .progress-group:hover {
-        width: 45%;
-        gap: 20px;
-        padding: 8px;
+        border: 3px solid #9b4819;
+        margin: 20px 20px;
+        border-radius: 50%;
+        width: 150px;
+        gap: 10px;
+        padding: 10px;
         transition: 450ms;
         transform: rotate(2deg);
     }
 
 
     .skill {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 0em;
-        margin-inline-start: 12px;
-        margin-inline-end: 0px;
+        /* border: 1px solid red; */
+        font-size: smaller;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .progress-area {
-        margin-top: 3px;
-        width: 100%;
-        background-color: gray;
-        border-radius: 20px;
+        will-change: transform;
+        transition: transform 450ms;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .progress-area img {
+        width: 50px;
     }
 
     .skill-row {
@@ -458,72 +463,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-    }
-
-    .skillset {
-        text-align: right;
-        color: #fff;
-        padding-right: 5px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        border-radius: 20px;
-    }
-
-    .html {
-        width: 95%;
-        background-color: #9b4819;
-        /* plum,gold,palevioletred,coral,burlywood,sandybrown,aquamarine,slateblue */
-    }
-
-    .css {
-        width: 90%;
-        background-color: #9b4819;
-    }
-
-    .bootstrap {
-        width: 65%;
-        background-color: #9b4819;
-    }
-
-    .java {
-        width: 55%;
-        background-color: #9b4819;
-    }
-
-    .react {
-        width: 60%;
-        background-color: #9b4819;
-    }
-
-    .javascript {
-        width: 50%;
-        background-color: #9b4819;
-    }
-
-    .mysql {
-        width: 75%;
-        background-color: #9b4819;
-    }
-
-    .git {
-        width: 50%;
-        background-color: #9b4819;
-    }
-
-    .php {
-        width: 50%;
-        background-color: #9b4819;
-    }
-
-    .c {
-        width: 90%;
-        background-color: #9b4819;
-    }
-
-    .oracle {
-        width: 35%;
-        background-color: #9b4819;
+        justify-content: center;
     }
 
 
@@ -549,6 +489,88 @@ body {
         font-size: 16px;
         margin-bottom: 30px;
     }
+
+    /* ------------React Project Boxs ------------------*/
+
+#react-projects-box {
+    width: 75%;
+    margin: 30px auto;
+    position: relative;
+    padding: 20px;
+    background-color: #f4f1e8;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Important to hide inner overflow */
+  }
+
+  #react-projects-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  /* Initially hide project items */
+  .projects-grid {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+
+  /* On hover, show project items */
+  #react-projects-box:hover .projects-grid {
+    opacity: 1;
+    max-height: 1000px; /* Enough to show all projects */
+  }
+
+.projects-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .project-card {
+    border: 1px solid sienna;
+    background-color: #f4f1e8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  }
+
+  .project-card button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #9b4819;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .project-card button:hover {
+    background-color: #f4f1e8;
+    color: #9b4819;
+    border: 1px solid #9b4819;
+  }
+
+  .react-p {
+    margin: 5px 0px;
+  }
+
+  .line {
+    width: 80%;
+    height: 4px;
+    background-color: #9b4819;
+    margin: 50px auto;
+  }
+
 
     /*---project box---*/
 
@@ -811,6 +833,10 @@ body {
     }
 
 
+
+
+
+
 }
 
 
@@ -822,17 +848,20 @@ body {
     /*=================== NAVBAR ===================== */
 
     .nav {
+
         width: 100%;
-        height: 40px;
+        height: fit-content;
         background-color: #f4f1e8;
         display: flex;
+
         justify-content: space-between;
         align-items: center;
-        padding: 0 3vw;
+        padding: 3px;
         position: sticky;
         top: 0px;
         font-size: 1.20vw;
-         z-index: 3; 
+         z-index: 3;
+
     }
 
     .logo {
@@ -869,6 +898,7 @@ body {
 
     /*---- Dropdown ---- */
     .nav button {
+        border: 1px solid blue;
         border: none;
         fill: #9b4819;
     }
@@ -881,7 +911,13 @@ body {
     .dropbtn {
         border: none;
         cursor: pointer;
+        /* background-color: green; */
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
     }
+
+
 
     .dropbtn:hover,
     .dropbtn:focus {
@@ -962,6 +998,7 @@ body {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: italic;
+        transition: all 0.8s ease;
     }
 
     .title-flex-1:hover {
@@ -986,10 +1023,11 @@ body {
         font-weight: 700;
         font-style: normal;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        /* transition: all 0.8s ease; */
     }
 
     .title-flex-2:hover {
-        color: #9b4819;
+        color: white;
         text-align: center;
         font-size: 15vw;
         margin-left: 18px;
@@ -1063,8 +1101,8 @@ body {
         width: 90%;
         height: auto;
         /* border: 1px solid royalblue;   */
-        border-radius: 18px; 
-         padding: 16px; 
+        border-radius: 18px;
+         padding: 16px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -1179,7 +1217,7 @@ body {
         flex-wrap: wrap;
         margin: 10px auto;
         /* border: solid sienna; */
-         justify-content: space-between; 
+         justify-content: space-between;
         align-items: center;
     }
 
@@ -1280,119 +1318,52 @@ body {
     }
 
     .progress-group {
-        width: 45%;
-        gap: 20px;
-        padding: 0px;
+        border: 1px solid #9b4819;
+        border-radius: 10px;
+        margin: 5px 10px;
+        width: fit-content;
+        gap: 5px;
+        padding: 5px;
         will-change: transform;
         transition: transform 450ms;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .progress-group:hover {
-        width: 45%;
-        gap: 20px;
-        padding: 8px;
+        border: 1px solid #9b4819;
         transition: 450ms;
         transform: rotate(2deg);
     }
 
 
     .skill {
-        display: block;
-        font-size: 14px;
-        margin-block-start: 1em;
-        margin-block-end: 0em;
-        margin-inline-start: 12px;
-        margin-inline-end: 0px;
+        /* border: 1px solid red; */
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .progress-area {
-        width: 100%;
-        background-color: gray;
-        border-radius: 20px;
+        will-change: transform;
+        transition: transform 450ms;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .progress-area img {
+        width: 30px;
     }
 
     .skill-row {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-    }
-
-    .skillset {
-        text-align: right;
-        color: #fff;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 20px;
-    }
-
-    .html {
-        width: 95%;
-        font-size: 14px;
-        background-color: #9b4819;
-        /* plum,gold,palevioletred,coral,burlywood,sandybrown,aquamarine,slateblue */
-    }
-
-    .css {
-        width: 90%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .bootstrap {
-        width: 65%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .java {
-        width: 55%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .react {
-        width: 60%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .javascript {
-        width: 50%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .mysql {
-        width: 75%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .git {
-        width: 50%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .php {
-        width: 50%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .c {
-        width: 90%;
-        font-size: 14px;
-        background-color: #9b4819;
-    }
-
-    .oracle {
-        width: 35%;
-        font-size: 14px;
-        background-color: #9b4819;
+        justify-content: center;
     }
 
 
@@ -1417,8 +1388,89 @@ body {
 
     .p4 {
         font-size: 12px;
-        
+
     }
+
+        /* ------------React Project Boxs ------------------*/
+
+#react-projects-box {
+    width: 75%;
+    margin: 30px auto;
+    position: relative;
+    padding: 20px;
+    background-color: #f4f1e8;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Important to hide inner overflow */
+  }
+
+  #react-projects-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  /* Initially hide project items */
+  .projects-grid {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+
+  /* On hover, show project items */
+  #react-projects-box:hover .projects-grid {
+    opacity: 1;
+    max-height: 1000px; /* Enough to show all projects */
+  }
+
+.projects-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .project-card {
+    border: 1px solid sienna;
+    background-color: #f4f1e8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  }
+
+  .project-card button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #9b4819;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .project-card button:hover {
+    background-color: #f4f1e8;
+    color: #9b4819;
+    border: 1px solid #9b4819;
+  }
+
+  .react-p {
+    margin: 5px 0px;
+  }
+
+  .line {
+    width: 80%;
+    height: 4px;
+    background-color: #9b4819;
+    margin: 50px auto;
+  }
 
     /*---project box---*/
 
@@ -1435,7 +1487,7 @@ body {
         z-index: 1;
     }
 
-   
+
     .project-box:hover {
         transform: rotate(-1deg);
         transition: 220ms;
@@ -1497,7 +1549,7 @@ body {
     .project-box-btn {
         justify-content:space-evenly;
         display: flex;
-        
+
     }
 
     .btn1 {
@@ -1649,7 +1701,7 @@ body {
         height: 55px;
         border-radius: 50%;
     }
-     
+
     .ft{
         display: none;
     }
