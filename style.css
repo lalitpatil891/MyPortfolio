@@ -1249,6 +1249,7 @@ body {
 
     .logo {
         font-size: 4vw;
+        margin-left: 10px;
         color: #9b4819;
         font-weight: 600;
     }
