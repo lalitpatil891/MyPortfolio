@@ -13,7 +13,8 @@ html,
 body {
     height: auto;
     width: 100%;
-    background-color: #f4f1e8;
+    /* background-color: #f4f1e8-;     #9b4819-*/
+    background-color: #f4f1e8; 
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
@@ -24,6 +25,10 @@ body {
     /* position: relative; */
     /* background-color: aqua; */
 }
+
+
+
+/* ------------write-text theam end-------------- */
 
 /*=================== NAVBAR ===================== */
 
@@ -115,42 +120,411 @@ body {
         to {}
     }
 
-    .title-flex-1 {
+    .title-flex-1,
+    .title-flex-2 {
         font-size: 5vw;
         margin-top: 200px;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
-        font-style: italic;
-        transition: all 0.8s ease;
-    }
-
-    .title-flex-1:hover {
-        font-size: 6vw;
-        transform: rotate(-2deg);
+        transition: transform 0.5s ease;
+        
     }
 
     .title-flex-2 {
+        
         color: #9b4819;
-        font-size: 5vw;
-        margin-top: 200px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); /* smoother */
+      
+    }
+
+    .title-flex-1:hover {
+        transform: scale(1) rotate(-3deg);
     }
 
     .title-flex-2:hover {
-        font-size: 6vw;
-        transform: rotate(2deg);
-        /* Again, only add what actually changes on hover */
+        transform: scale(1) rotate(3deg);
     }
+
 
 
     .caption {
+        /* border: 1px solid red; */
         text-align: center;
         font-size: 1.5vw;
         margin-top: 2vw;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        /* height: 100vh; */
+        /* margin: 0; */
     }
+
+    /* ------------write-text theam start-------------- */
+
+
+    h4 {
+        /* font-size: 9vmin; */
+        color: #9b4819;
+        text-align: left;
+        width: fit-content;
+
+        /* font-family: Lato, sans-serif; */
+        /* font-weight: 700; */
+        /* margin: 1rem 0 1rem 2rem;s */
+    }
+
+    /* Typewriter effect 1 start */
+    @keyframes typing {
+
+        /* === 1️⃣ Software Developer === */
+        0%,
+        10% {
+            content: "";
+        }
+
+        1%,
+        9% {
+            content: "S";
+        }
+
+        2%,
+        8% {
+            content: "So";
+        }
+
+        3%,
+        7% {
+            content: "Sof";
+        }
+
+        4%,
+        6% {
+            content: "Soft";
+        }
+
+        5%,
+        5% {
+            content: "Softw";
+        }
+
+        6%,
+        4% {
+            content: "Softwa";
+        }
+
+        7%,
+        3% {
+            content: "Softwar";
+        }
+
+        8%,
+        2% {
+            content: "Software";
+        }
+
+        9%,
+        1% {
+            content: "Software ";
+        }
+
+        10%,
+        11% {
+            content: "Software D";
+        }
+
+        12%,
+        13% {
+            content: "Software De";
+        }
+
+        14%,
+        15% {
+            content: "Software Dev";
+        }
+
+        16%,
+        17% {
+            content: "Software Deve";
+        }
+
+        18%,
+        19% {
+            content: "Software Devel";
+        }
+
+        20%,
+        21% {
+            content: "Software Develo";
+        }
+
+        22%,
+        23% {
+            content: "Software Develop";
+        }
+
+        24%,
+        25% {
+            content: "Software Develope";
+        }
+
+        26%,
+        27% {
+            content: "Software Developer";
+        }
+
+        /* === Erase === */
+        28%,
+        30% {
+            content: "";
+        }
+
+        /* === 2️⃣ Full Stack Developer === */
+        31%,
+        32% {
+            content: "F";
+        }
+
+        33%,
+        34% {
+            content: "Fu";
+        }
+
+        35%,
+        36% {
+            content: "Ful";
+        }
+
+        37%,
+        38% {
+            content: "Full";
+        }
+
+        39%,
+        40% {
+            content: "Full ";
+        }
+
+        41%,
+        42% {
+            content: "Full S";
+        }
+
+        43%,
+        44% {
+            content: "Full St";
+        }
+
+        45%,
+        46% {
+            content: "Full Sta";
+        }
+
+        47%,
+        48% {
+            content: "Full Stac";
+        }
+
+        49%,
+        50% {
+            content: "Full Stack";
+        }
+
+        51%,
+        52% {
+            content: "Full Stack ";
+        }
+
+        53%,
+        54% {
+            content: "Full Stack D";
+        }
+
+        55%,
+        56% {
+            content: "Full Stack De";
+        }
+
+        57%,
+        58% {
+            content: "Full Stack Dev";
+        }
+
+        59%,
+        60% {
+            content: "Full Stack Deve";
+        }
+
+        61%,
+        62% {
+            content: "Full Stack Devel";
+        }
+
+        63%,
+        64% {
+            content: "Full Stack Develo";
+        }
+
+        65%,
+        66% {
+            content: "Full Stack Develop";
+        }
+
+        67%,
+        68% {
+            content: "Full Stack Develope";
+        }
+
+        69%,
+        70% {
+            content: "Full Stack Developer";
+        }
+
+        /* === Erase === */
+        71%,
+        72% {
+            content: "";
+        }
+
+        /* === 3️⃣ Java Developer === */
+        73%,
+        74% {
+            content: "J";
+        }
+
+        75%,
+        76% {
+            content: "Ja";
+        }
+
+        77%,
+        78% {
+            content: "Jav";
+        }
+
+        79%,
+        80% {
+            content: "Java";
+        }
+
+        81%,
+        82% {
+            content: "Java ";
+        }
+
+        83%,
+        84% {
+            content: "Java D";
+        }
+
+        85%,
+        86% {
+            content: "Java De";
+        }
+
+        87%,
+        88% {
+            content: "Java Dev";
+        }
+
+        89%,
+        90% {
+            content: "Java Deve";
+        }
+
+        91%,
+        92% {
+            content: "Java Devel";
+        }
+
+        93%,
+        94% {
+            content: "Java Develo";
+        }
+
+        95%,
+        96% {
+            content: "Java Develop";
+        }
+
+        97%,
+        98% {
+            content: "Java Develope";
+        }
+
+        99%,
+        100% {
+            content: "Java Developer";
+        }
+    }
+
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .typewriter {
+        --caret: currentcolor;
+    }
+
+    .typewriter::before {
+        content: "";
+        animation: typing 13.5s infinite;
+    }
+
+    .typewriter::after {
+        content: "";
+        border-right: 1px solid var(--caret);
+        animation: blink 0.5s linear infinite;
+    }
+
+    .typewriter.thick::after {
+        border-right: 1ch solid var(--caret);
+    }
+
+    .typewriter.nocaret::after {
+        border-right: 0;
+    }
+
+
+    @media (prefers-reduced-motion) {
+        .typewriter::after {
+            animation: none;
+        }
+
+        @keyframes sequencePopup {
+
+            0%,
+            100% {
+                content: "developer";
+            }
+
+            25% {
+                content: "writer";
+            }
+
+            50% {
+                content: "reader";
+            }
+
+            75% {
+                content: "human";
+            }
+        }
+
+        .typewriter::before {
+            content: "developer";
+            animation: sequencePopup 12s linear infinite;
+        }
+    }
+
+    /* -----Typewriter effect 1 Ended------- */
 
     .hire {
         text-align: center;
@@ -163,7 +537,7 @@ body {
         color: #9b4819;
     }
 
-   .btn3 {
+    .btn3 {
 
         border: 1px solid #9b4819;
         color: #9b4819;
@@ -247,7 +621,7 @@ body {
 
     .image-lalit {
         width: 100%;
-        box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
     }
@@ -307,15 +681,15 @@ body {
     }
 
     .bg-box-main {
-       /* border: 1px solid red; */
+        /* border: 1px solid red; */
         width: 80%;
-        gap : 20px;
+        gap: 20px;
         display: flex;
         flex-wrap: wrap;
         margin: 10px auto;
         /* border: solid sienna; */
         /*justify-content:space-around;*/
-       /* align-items: center;*/
+        /* align-items: center;*/
 
 
     }
@@ -371,15 +745,15 @@ body {
     /*--------------------certificates-------------------*/
 
 
-     .bg-box-cert {
-         width: 100%;
-         margin: 10px auto;
-         /* border: 1px solid sienna; */
-         /* text-align: center; */
-         padding: 20px;
-         border-radius: 18px;
-         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-     }
+    .bg-box-cert {
+        width: 100%;
+        margin: 10px auto;
+        /* border: 1px solid sienna; */
+        /* text-align: center; */
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
 
     /*---------------SKILLS-------------------*/
 
@@ -482,7 +856,8 @@ body {
         width: 80%;
         margin: 0 auto;
         display: flex;
-        justify-content:space-evenly;
+        justify-content: flex-start;
+        gap: 50px;
         flex-wrap: wrap;
     }
 
@@ -494,84 +869,86 @@ body {
 
     /* ------------React Project Boxs ------------------*/
 
-#react-projects-box {
-    width: 75%;
-    margin: 30px auto;
-    position: relative;
-    padding: 20px;
-    background-color: #f4f1e8;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Important to hide inner overflow */
-  }
+    #react-projects-box {
+        width: 75%;
+        margin: 30px auto;
+        position: relative;
+        padding: 20px;
+        background-color: #f4f1e8;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        /* Important to hide inner overflow */
+    }
 
-  #react-projects-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+    #react-projects-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
 
 
-  /* Initially hide project items */
-  .projects-grid {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-  }
+    /* Initially hide project items */
+    .projects-grid {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+    }
 
-  /* On hover, show project items */
-  #react-projects-box:hover .projects-grid {
-    opacity: 1;
-    max-height: 1000px; /* Enough to show all projects */
-  }
+    /* On hover, show project items */
+    #react-projects-box:hover .projects-grid {
+        opacity: 1;
+        max-height: 1000px;
+        /* Enough to show all data */
+    }
 
-.projects-grid {
+    .projects-grid {
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
 
-  .project-card {
-    border: 1px solid sienna;
-    background-color: #f4f1e8;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-  }
+    .project-card {
+        border: 1px solid sienna;
+        background-color: #f4f1e8;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    }
 
-  .project-card button {
-    margin: 5px;
-    padding: 8px 12px;
-    border: none;
-    background-color: #9b4819;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    .project-card button {
+        margin: 5px;
+        padding: 8px 12px;
+        border: none;
+        background-color: #9b4819;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-  .project-card button:hover {
-    background-color: #f4f1e8;
-    color: #9b4819;
-    border: 1px solid #9b4819;
-  }
+    .project-card button:hover {
+        background-color: #f4f1e8;
+        color: #9b4819;
+        border: 1px solid #9b4819;
+    }
 
-  .react-p {
-    margin: 5px 0px;
-  }
+    .react-p {
+        margin: 5px 0px;
+    }
 
-  .line {
-    width: 80%;
-    height: 4px;
-    background-color: #9b4819;
-    margin: 50px auto;
-  }
+    .line {
+        width: 80%;
+        height: 4px;
+        background-color: #9b4819;
+        margin: 50px auto;
+    }
 
 
     /*---project box---*/
@@ -694,7 +1071,7 @@ body {
         border-radius: 8px;
         transform: rotate(1deg);
         transition: 420ms;
-       
+
         /* transition: 450ms; */
     }
 
@@ -814,12 +1191,12 @@ body {
         transition: 420ms;
     }
 
-    .ft-mobile{
+    .ft-mobile {
         display: none;
     }
 
     .ft-2 {
-        color: black;
+        color: White;
         font-size: 25px;
         font-weight: 700;
     }
@@ -828,7 +1205,7 @@ body {
         text-align: center;
         margin-top: -11px;
         font-size: 16px;
-        color: black;
+        color: #9b4819;
         padding: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f4f1e8;
@@ -866,12 +1243,13 @@ body {
         position: sticky;
         top: 0px;
         font-size: 1.20vw;
-         z-index: 3;
+        z-index: 3;
 
     }
 
     .logo {
-        font-size: 5.5vw;
+        font-size: 4vw;
+        color: #9b4819;
         font-weight: 600;
     }
 
@@ -953,7 +1331,7 @@ body {
     }
 
     .dropdown-content a {
-        color: black;
+        color: White;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -994,6 +1372,7 @@ body {
         from {
             margin-top: 800px;
         }
+
         to {}
     }
 
@@ -1048,12 +1427,384 @@ body {
     }
 
     .caption {
+        /* border: 1px solid White; */
+        width: 80%;
         text-align: center;
-        margin-right: 10px;
-        font-size: 4.5vw;
-        margin-top: 22vw;
+        margin: 10px auto;
+        /* font-size: 4.5vw; */
+        /* margin-top: 22vw; */
         color: #f4f1e8;
+        display: flex;
+        justify-content: left;
+        
     }
+
+    /* -----Typewriter effect 1 started------- */
+     h4 {
+        border-bottom:2px solid #f4f1e8;
+        font-size: 25px;
+        color: white;
+        text-align: left;
+        width: fit-content;
+
+        /* font-family: Lato, sans-serif; */
+        /* font-weight: 700; */
+        /* margin: 1rem 0 1rem 2rem;s */
+    }
+
+    /* Typewriter effect 1 start */
+    @keyframes typing {
+
+        /* === 1️⃣ Software Developer === */
+        0%,
+        10% {
+            content: "";
+        }
+
+        1%,
+        9% {
+            content: "S";
+        }
+
+        2%,
+        8% {
+            content: "So";
+        }
+
+        3%,
+        7% {
+            content: "Sof";
+        }
+
+        4%,
+        6% {
+            content: "Soft";
+        }
+
+        5%,
+        5% {
+            content: "Softw";
+        }
+
+        6%,
+        4% {
+            content: "Softwa";
+        }
+
+        7%,
+        3% {
+            content: "Softwar";
+        }
+
+        8%,
+        2% {
+            content: "Software";
+        }
+
+        9%,
+        1% {
+            content: "Software ";
+        }
+
+        10%,
+        11% {
+            content: "Software D";
+        }
+
+        12%,
+        13% {
+            content: "Software De";
+        }
+
+        14%,
+        15% {
+            content: "Software Dev";
+        }
+
+        16%,
+        17% {
+            content: "Software Deve";
+        }
+
+        18%,
+        19% {
+            content: "Software Devel";
+        }
+
+        20%,
+        21% {
+            content: "Software Develo";
+        }
+
+        22%,
+        23% {
+            content: "Software Develop";
+        }
+
+        24%,
+        25% {
+            content: "Software Develope";
+        }
+
+        26%,
+        27% {
+            content: "Software Developer";
+        }
+
+        /* === Erase === */
+        28%,
+        30% {
+            content: "";
+        }
+
+        /* === 2️⃣ Full Stack Developer === */
+        31%,
+        32% {
+            content: "F";
+        }
+
+        33%,
+        34% {
+            content: "Fu";
+        }
+
+        35%,
+        36% {
+            content: "Ful";
+        }
+
+        37%,
+        38% {
+            content: "Full";
+        }
+
+        39%,
+        40% {
+            content: "Full ";
+        }
+
+        41%,
+        42% {
+            content: "Full S";
+        }
+
+        43%,
+        44% {
+            content: "Full St";
+        }
+
+        45%,
+        46% {
+            content: "Full Sta";
+        }
+
+        47%,
+        48% {
+            content: "Full Stac";
+        }
+
+        49%,
+        50% {
+            content: "Full Stack";
+        }
+
+        51%,
+        52% {
+            content: "Full Stack ";
+        }
+
+        53%,
+        54% {
+            content: "Full Stack D";
+        }
+
+        55%,
+        56% {
+            content: "Full Stack De";
+        }
+
+        57%,
+        58% {
+            content: "Full Stack Dev";
+        }
+
+        59%,
+        60% {
+            content: "Full Stack Deve";
+        }
+
+        61%,
+        62% {
+            content: "Full Stack Devel";
+        }
+
+        63%,
+        64% {
+            content: "Full Stack Develo";
+        }
+
+        65%,
+        66% {
+            content: "Full Stack Develop";
+        }
+
+        67%,
+        68% {
+            content: "Full Stack Develope";
+        }
+
+        69%,
+        70% {
+            content: "Full Stack Developer";
+        }
+
+        /* === Erase === */
+        71%,
+        72% {
+            content: "";
+        }
+
+        /* === 3️⃣ Java Developer === */
+        73%,
+        74% {
+            content: "J";
+        }
+
+        75%,
+        76% {
+            content: "Ja";
+        }
+
+        77%,
+        78% {
+            content: "Jav";
+        }
+
+        79%,
+        80% {
+            content: "Java";
+        }
+
+        81%,
+        82% {
+            content: "Java ";
+        }
+
+        83%,
+        84% {
+            content: "Java D";
+        }
+
+        85%,
+        86% {
+            content: "Java De";
+        }
+
+        87%,
+        88% {
+            content: "Java Dev";
+        }
+
+        89%,
+        90% {
+            content: "Java Deve";
+        }
+
+        91%,
+        92% {
+            content: "Java Devel";
+        }
+
+        93%,
+        94% {
+            content: "Java Develo";
+        }
+
+        95%,
+        96% {
+            content: "Java Develop";
+        }
+
+        97%,
+        98% {
+            content: "Java Develope";
+        }
+
+        99%,
+        100% {
+            content: "Java Developer";
+        }
+    }
+
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .typewriter {
+        --caret: currentcolor;
+    }
+
+    .typewriter::before {
+        content: "";
+        animation: typing 13.5s infinite;
+    }
+
+    .typewriter::after {
+        content: "";
+        border-right: 1px solid var(--caret);
+        animation: blink 0.5s linear infinite;
+    }
+
+    .typewriter.thick::after {
+        border-right: 1ch solid var(--caret);
+    }
+
+    .typewriter.nocaret::after {
+        border-right: 0;
+    }
+
+
+    @media (prefers-reduced-motion) {
+        .typewriter::after {
+            animation: none;
+        }
+
+        @keyframes sequencePopup {
+
+            0%,
+            100% {
+                content: "developer";
+            }
+
+            25% {
+                content: "writer";
+            }
+
+            50% {
+                content: "reader";
+            }
+
+            75% {
+                content: "human";
+            }
+        }
+
+        .typewriter::before {
+            content: "developer";
+            animation: sequencePopup 12s linear infinite;
+        }
+    }
+
+    /* -----Typewriter effect 1 Ended------- */
 
     .hire {
         text-align: center;
@@ -1110,7 +1861,7 @@ body {
         height: auto;
         /* border: 1px solid royalblue;   */
         border-radius: 18px;
-         padding: 16px;
+        padding: 16px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -1134,7 +1885,7 @@ body {
         font-weight: 500;
         font-style: italic;
         color: #9b4819;
-       margin-left: 10px;
+        margin-left: 10px;
 
     }
 
@@ -1201,7 +1952,7 @@ body {
         /* background-color: aquamarine; */
         padding-top: 50px;
         padding-bottom: 180px;
-        z-index:1;
+        z-index: 1;
 
     }
 
@@ -1226,7 +1977,7 @@ body {
         flex-wrap: wrap;
         margin: 10px auto;
         /* border: solid sienna; */
-         justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -1307,7 +2058,7 @@ body {
         width: 80%;
         margin: 0px auto;
         display: block;
-        color: black;
+        color: White;
         font-size: 18px;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -1340,7 +2091,7 @@ body {
 
     }
 
-   
+
 
     .progress-group:hover {
         /* border: 3px solid #9b4819; */
@@ -1355,7 +2106,7 @@ body {
         transform: rotate(2deg);
     }
 
-    
+
 
     .skill {
         /* border: 1px solid red; */
@@ -1363,6 +2114,7 @@ body {
         text-align: center;
         justify-content: center;
         align-items: center;
+        color: #000000;
     }
 
     .progress-area {
@@ -1410,101 +2162,103 @@ body {
 
     }
 
-        /* ------------React Project Boxs ------------------*/
+    /* ------------React Project Boxs ------------------*/
 
-#react-projects-box {
-    width: 80%;
-    margin: 30px auto;
-    position: relative;
-    padding: 20px;
-    background-color: #f4f1e8;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Important to hide inner overflow */
-  }
+    #react-projects-box {
+        width: 80%;
+        margin: 30px auto;
+        position: relative;
+        padding: 20px;
+        background-color: #f4f1e8;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        /* Important to hide inner overflow */
+    }
 
-  #react-projects-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+    #react-projects-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
 
 
-  /* Initially hide project items */
-  .projects-grid {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-  }
+    /* Initially hide project items */
+    .projects-grid {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+    }
 
-  /* On hover, show project items */
-  #react-projects-box:hover .projects-grid {
-    opacity: 1;
-    max-height: 1000px; /* Enough to show all projects */
-  }
+    /* On hover, show project items */
+    #react-projects-box:hover .projects-grid {
+        opacity: 1;
+        max-height: 1000px;
+        /* Enough to show all data */
+    }
 
-.projects-grid {
+    .projects-grid {
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
-  .project-card {
-    width:inherit;
-    border: 1px solid sienna;
-    background-color: #f4f1e8;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-  }
+    .project-card {
+        width: inherit;
+        border: 1px solid sienna;
+        background-color: #f4f1e8;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    }
 
-  .project-card p {
-    font-size: 14px;
-  }
+    .project-card p {
+        font-size: 14px;
+    }
 
-  .project-card button {
-    margin: 5px;
-    padding: 4px 8px;
-    border: 1px solid #9b4819;
-    background-color: #9b4819;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    .project-card button {
+        margin: 5px;
+        padding: 4px 8px;
+        border: 1px solid #9b4819;
+        background-color: #9b4819;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-  .project-card button:hover {
-    background-color: #f4f1e8;
-    color: #9b4819;
-    border: 1px solid #9b4819;
-  }
+    .project-card button:hover {
+        background-color: #f4f1e8;
+        color: #9b4819;
+        border: 1px solid #9b4819;
+    }
 
-  .react-p {
-    font-size: 14px;
-    margin: 5px 0px;
-  }
+    .react-p {
+        font-size: 14px;
+        margin: 5px 0px;
+    }
 
-  .line {
-    width: 80%;
-    height: 4px;
-    background-color: #9b4819;
-    margin: 50px auto;
-  }
+    .line {
+        width: 80%;
+        height: 4px;
+        background-color: #9b4819;
+        margin: 50px auto;
+    }
 
     /*---project box---*/
 
     .project-box {
         width: 350px;
-        /* border: 1px solid #9b4819;  */
+        /* border: 1px solid red;  */
         border-top-left-radius: 14px;
         border-top-right-radius: 14px;
         height: auto;
@@ -1577,7 +2331,7 @@ body {
     }
 
     .project-box-btn {
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         display: flex;
 
     }
@@ -1623,7 +2377,7 @@ body {
         border-radius: 8px;
         transform: rotate(2deg);
         /* transition: 450ms; */
-        
+
     }
 
     .btn1:hover {
@@ -1706,6 +2460,7 @@ body {
         border-radius: 22px;
 
     }
+
     .icon-flex {
         display: flex;
         gap: 10px;
@@ -1735,11 +2490,11 @@ body {
         border-radius: 50%;
     }
 
-    .ft{
+    .ft {
         display: none;
     }
 
-    .ft-mobile{
+    .ft-mobile {
         display: block;
     }
 
@@ -1752,8 +2507,9 @@ body {
     .end {
         text-align: center;
         margin-top: -11px;
-        font-size: 12px;
-        color: black;
+        font-size: 14px;
+        padding: 10px;
+        color: #9b4819;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f4f1e8;
     }

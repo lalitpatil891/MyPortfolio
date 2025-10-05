@@ -1,0 +1,115 @@
+{
+  "miniReactProjects": [
+      {
+      "title": "OTP Generator",
+      "description": "A simple and responsive OTP (One-Time Password) generator built using React. Easily generate 4-digit or 6-digit OTPs, copy them with a click, and use them in your apps for authentication or testing purposes.",
+      "liveLink": "https://otp-generatorbylp.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/OTP-Generator",
+      "languages": ["React-js", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "ClickCount",
+      "description": "A simple and interactive counter app built using React. Tap to increase or decrease the count, and reset it anytime with a single click!",
+      "liveLink": "https://clickcountbylp.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/ClickCounter",
+      "languages": ["React-js", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "CineSearch",
+      "description": "A React.js app to search your favorite movies using a public API, showing movie titles, posters, and release years with a clean, responsive UI.",
+      "liveLink": "https://cinesearch08.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/CineSearch",
+      "languages": ["React-js", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "Feedback System UI",
+      "description": "Built a clean and responsive feedback form using React.js, allowing users to submit device details, photos, and feedback easily.",
+      "liveLink": "https://feedbacksystembylp.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/Feedbacksystem",
+      "languages": ["React-js", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "CalcuMate",
+      "description": "A simple and responsive React-based arithmetic calculator that allows users to perform basic operations such as addition, subtraction, multiplication, division, modulus, and power.",
+      "liveLink": "http://calcumatelp.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/CalcuMate",
+      "languages": ["React-js", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "BookHunt",
+      "description": "BookHunt is a React + Vite + TailwindCSS application that allows users to search for books using the OpenLibrary API.",
+      "liveLink": "https://bookhuntlp.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/BookHunt",
+      "languages": ["React-js", "JavaScript", "HTML", "CSS"]
+    }
+    
+  ],
+  "mainProjects": [
+    {
+      "title": "ecommerce-react-springboot",
+      "image": "img/ecom.png",
+      "description": [
+        "Full-stack e-commerce app using Spring Boot & React.js with product management, shopping cart, image upload, and keyword search."
+      ],
+      "languages": ["Java 17+", "Spring Boot", "Spring Data JPA", "MYSQL", "React.js", "React Router DOM", "Axios","Bootstrap"],
+      "duration": "AUG 2025- SEP 2025", 
+      "sourceLink": "https://github.com/lalitpatil891/ecommerce-react-springboot"
+    },
+    {
+      "title": "Task Nest",
+      "image": "img/tasknest.png",
+      "description": [
+        "Task Nest – Full-stack task management app built with React and Spring Boot for creating, organizing, and tracking tasks efficiently."
+      ],
+      "languages": ["Java 17+","Spring Boot 3.5.5", "Spring Data JPA", "REST APIs", "MySQL", "React 19", "Tailwind CSS", "Axios", "React Hot Toast"],
+      "duration": "OCT 2025 ",
+      "liveLink": "",
+      "sourceLink": "https://github.com/lalitpatil891/PG-Life"
+    },
+    {
+      "title": "ThinkBoard",
+      "image": "img/thinkboard.png",
+      "description": [
+        "Minimalist MERN-based note-taking app with create/view/delete notes, backend rate limiting, and real-time feedback via react-hot-toast."
+      ],
+      "languages": ["React.js", "Tailwind CSS", "Axios", "Node.js", "Express.js", "MongoDB"],
+      "duration": "JUL 2025",
+      "liveLink": "https://thinkboard-mern-nvhb.onrender.com/",
+      "sourceLink": "https://github.com/lalitpatil891/thinkboard-mern"
+    },
+    {
+      "title": "FlickFinder",
+      "image": "img/flinkFinder.png",
+      "description": [
+        "FlickFinder – Movie search & discovery app built with React (Vite), Tailwind CSS, and Appwrite, using TMDb API for movie data and trending searches."
+      ],
+      "languages": ["React 19","TailwindCSS", "Appwrite", "TMDb API"],
+      "duration": "AUG 2025",
+      "liveLink": "http://flinkfinder.netlify.app/",
+      "sourceLink": "https://github.com/lalitpatil891/FlinkFinder"
+    },
+    {
+      "title": "PG LIFE",
+      "image": "img/PG Life.jpg",
+      "description": [
+        "PG Life is a website where user can easily find PG as per their requirement."
+      ],
+      "languages": ["HTML", "CSS", "Bootstrap", "PHP", "JS", "MYSQL", "React"],
+      "duration": "NOV 2023- JAN 2024",
+      "liveLink": "http://pglifepro.infinityfreeapp.com/",
+      "sourceLink": "https://github.com/lalitpatil891/PG-Life"
+    },
+    {
+      "title": "SMART SOLAR GRASS CUTTER",
+      "image": "img/SSGC.png",
+      "description": [
+        "Designed and developed a smart solar grass cutter with autonomous lawn coverage using microcontrollers, sensors, solar, mobile application."
+      ],
+      "languages": ["Arduino IDE", "MIT App Inventor", "C++"],
+      "duration": "Dec 2023- JUN 2024",
+      "liveLink": "https://drive.google.com/file/d/1DWkJERkxAgYmYVYxmkpCXgaZZP5swwK_/view?usp=sharing",
+      "sourceLink": "https://github.com/lalitpatil891/Smart-Solar-Grass-Cutter"
+    }
+   
+  ]
+}

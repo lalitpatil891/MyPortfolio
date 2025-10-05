@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Added Font Awesome for footer heart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Portfolio - Lalit Patil</title>
 </head>
 
@@ -18,13 +20,13 @@
                 <div class="li-nav"><a href="#home">Home</a></div>
                 <div class="li-nav"><a href="#about">About</a></div>
                 <div class="li-nav"><a href="#background">Education</a></div>
+                <!-- <div class="li-nav"><a href="#certificates">Trainings & Certificates</a></div> -->
                 <div class="li-nav"><a href="#skills">Skills</a></div>
                 <div class="li-nav"><a href="#project">Projects</a></div>
                 <div class="li-nav"><a href="#footer">Contact</a></div>
 
                 <div class="dropdown nav">
                     <button onclick="myFunction()" class="dropbtn">
-                        <!-- Removed XML declaration -->
                         <svg height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 150" xml:space="preserve">
                             <g id="XMLID_240_">
@@ -42,6 +44,7 @@
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
                         <a href="#background">Education</a>
+                        <!-- <a href="#certificates">Trainings & Certificates</a> -->
                         <a href="#skills">Skills</a>
                         <a href="#project">Projects</a>
                         <a href="#footer">Contact</a>
@@ -56,7 +59,17 @@
                 <div class="title-flex-2">I am Lalit!</div>
             </div>
             <div class="caption">
-                <!-- Fueling dreams with creativity and code. -->
+                <!-- <h4 aria-label="Hi! I'm a developer">
+                    Hi! I'm a&nbsp;<span class="typewriter"></span>
+                </h4> -->
+
+                <h4 aria-label="Hi! I'm a developer">
+                    I'm a&nbsp;<span class="typewriter thick"></span>
+                </h4>
+                <!-- 
+                <h4 aria-label="Hi! I'm a developer">
+                    Hi! I'm a&nbsp;<span class="typewriter nocaret"></span>
+                </h4> -->
             </div>
             <div class="hire">
 
@@ -77,20 +90,19 @@
                         <div class="about-text-heading-name">Lalit Patil</div>
                     </div>
                     <div class="about-para">
-                        <!-- Welcome to my portfolio website! As a recent B.Tech graduate in Computer Engineering from Dr. Babasaheb Ambedkar Technological University, Lonere (2024), I have a strong passion for Full Stack Web Development. Alongside my technical interests, I enjoy video editing and photography. <br>Eager to dive into the world of Software Development, I aim to apply the knowledge and skills I have gained through my education and experiences. This website showcases a collection of my best work and projects completed during my studies. <br>I am constantly seeking new opportunities to collaborate with other professionals and gain more experience in the field. Thank you for taking the time to visit my portfolio website. -->
+                        <!-- Welcome to my portfolio website! As a recent B.Tech graduate in Computer Engineering from Dr. Babasaheb Ambedkar Technological University, Lonere (2024), I have a strong passion for Full Stack Web Development. Alongside my technical interests, I enjoy video editing and photography. <br>Eager to dive into the world of Software Development, I aim to apply the knowledge and skills I have gained through my education and experiences. This website showcases a collection of my best work and data completed during my studies. <br>I am constantly seeking new opportunities to collaborate with other professionals and gain more experience in the field. Thank you for taking the time to visit my portfolio website. -->
                         Hi, I'm Lalit Patil.
                         I'm a passionate Full Stack Developer and a B.Tech Computer Engineering graduate (2024).
                         I love building web applications and continuously improving my skills.
                         Always curious, always coding — excited to learn, create, and collaborate!
                         <div class="btn-center"><a
-                                href="https://drive.google.com/file/d/1DMxZ-vH4hjrcgLg4KTgKPeQUIw2h-QkJ/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1BjFo2lfeCBUvDZRs766DkON9ZKMSO0Ln/view?usp=sharing"
                                 target="_blank"><button class="btn4">Resume</button></a></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- background -->
-
         <div id="background" class="container-3">
             <div class="background">
                 <div class="background-title">Education</div>
@@ -139,88 +151,129 @@
                 <h2 class="title-text">Skills</h2>
                 <div class="skill-content">
                     <div class="skill-row">
+
+                        <!-- Programming Languages -->
+                        <div class="progress-group">
+                            <p class="skill">Java</p>
+                            <div class="progress-area">
+                                <img src="./img/java.png" alt="Java">
+                            </div>
+                        </div>
+
+                        <div class="progress-group">
+                            <p class="skill">SQL</p>
+                            <div class="progress-area">
+                                <img src="./img/mysql-icon.png" alt="SQL">
+                            </div>
+                        </div>
+
+                        <!-- Web Technologies -->
                         <div class="progress-group">
                             <p class="skill">HTML</p>
                             <div class="progress-area">
-                                <img src="./img/html-icon.png" alt="">
+                                <img src="./img/html-icon.png" alt="HTML">
                             </div>
                         </div>
 
                         <div class="progress-group">
-                            <p class="skill">CSS</p>
+                            <p class="skill">CSS</p>    
                             <div class="progress-area">
-                                <img src="./img/css.png" alt="">
+                                <img src="./img/css.png" alt="CSS">
                             </div>
                         </div>
 
                         <div class="progress-group">
-                            <p class="skill">BOOTSTRAP</p>
+                            <p class="skill">JavaScript</p>
                             <div class="progress-area">
-                                <img src="./img/bootstrap.png" alt="">
+                                <img src="./img/javascript-programming.png" alt="JavaScript">
                             </div>
                         </div>
 
                         <div class="progress-group">
-                            <p class="skill">JAVA</p>
+                            <p class="skill">REST APIs</p>
                             <div class="progress-area">
-                                <img src="./img/java.png" alt="">
+                                <img src="./img/rest-api-icon.png" alt="REST APIs">
+                            </div>
+                        </div>
+
+                        <!-- Frameworks & Libraries -->
+                        <div class="progress-group">
+                            <p class="skill">Spring Boot</p>
+                            <div class="progress-area">
+                                <img src="./img/spring-boot.png" alt="Spring Boot">
                             </div>
                         </div>
 
                         <div class="progress-group">
                             <p class="skill">React</p>
                             <div class="progress-area">
-                                <img src="./img/react-js-icon.png" alt="">
+                                <img src="./img/react-js-icon.png" alt="React">
                             </div>
                         </div>
 
                         <div class="progress-group">
-                            <p class="skill">Javascript</p>
+                            <p class="skill">Bootstrap</p>
                             <div class="progress-area">
-                                <img src="./img/javascript-programming.png" alt="">
+                                <img src="./img/bootstrap.png" alt="Bootstrap">
                             </div>
                         </div>
 
+                        <div class="progress-group">
+                            <p class="skill">Tailwind CSS</p>
+                            <div class="progress-area">
+                                <img src="./img/tailwind-icon.png" alt="Tailwind CSS">
+                            </div>
+                        </div>
+
+                        <!-- Databases -->
                         <div class="progress-group">
                             <p class="skill">MySQL</p>
                             <div class="progress-area">
-                                <img src="./img/mysql-icon.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="progress-group">
-                            <p class="skill">GIT</p>
-                            <div class="progress-area">
-                                <img src="./img/git-icon.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="progress-group">
-                            <p class="skill">PHP</p>
-                            <div class="progress-area">
-                                <img src="./img/php-programming.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="progress-group">
-                            <p class="skill">C</p>
-                            <div class="progress-area">
-                                <img src="./img/css.png" alt="">
+                                <img src="./img/mysql-icon.png" alt="MySQL">
                             </div>
                         </div>
 
                         <div class="progress-group">
                             <p class="skill">Oracle</p>
                             <div class="progress-area">
-                                <img src="./img/oracle-icon.png" alt="">
+                                <img src="./img/oracle-icon.png" alt="Oracle">
+                            </div>
+                        </div>
+
+                        <div class="progress-group">
+                            <p class="skill">MongoDB</p>
+                            <div class="progress-area">
+                                <img src="./img/mongodb-icon.png" alt="MongoDB">
+                            </div>
+                        </div>
+
+                        <div class="progress-group">
+                            <p class="skill">H2 Database</p>
+                            <div class="progress-area">
+                                <img src="./img/h2-logo.png" alt="H2 Database">
+                            </div>
+                        </div>
+
+                        <div class="progress-group">
+                            <p class="skill">PostgreSQL</p>
+                            <div class="progress-area">
+                                <img src="./img/icons8-postgresql-96.png" alt="PostgreSQL">
+                            </div>
+                        </div>
+
+                        <!-- Tools -->
+                        <div class="progress-group">
+                            <p class="skill">Git / GitHub</p>
+                            <div class="progress-area">
+                                <img src="./img/git-icon.png" alt="GitHub">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!------page 4 - PROJECT----->
 
+        <!------page 4 - PROJECT----->
         <div id="project" class="container-4">
             <div class="background">
                 <div class="background-title">Project Gallery</div>
@@ -237,148 +290,10 @@
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                 </p>
-
-
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3 class="project-title">ClickCount</h3>
-                        <p>A simple and interactive counter app built using React. Tap to increase or decrease the
-                            count, and reset it anytime with a single click!</p>
-                        <a href="https://clickcountbylp.netlify.app/" target="_blank"><button>See Live</button></a>
-                        <a href="https://github.com/lalitpatil891/ClickCounter" target="_blank"><button>Source Code
-                                </Source></button></a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3 class="project-title">CineSearch</h3>
-                        <p>A React.js app to search your favorite movies using a public API, showing movie titles,
-                            posters, and release years with a clean, responsive UI.</p>
-                        <a href="https://cinesearch08.netlify.app/" target="_blank"><button>See Live</button></a>
-                        <a href="https://github.com/lalitpatil891/CineSearch" target="_blank"><button>Source Code
-                                </Source></button></a>
-                    </div>
-
-
-                    <div class="project-card">
-                        <h3 class="project-title">Feedback System UI</h3>
-                        <p>Built a clean and <br>responsive feedback form using React.js, allowing users to submit device
-                            details, photos, and feedback easily.</p>
-                        <a href="https://feedbacksystembylp.netlify.app/" target="_blank"><button>See Live</button></a>
-                        <a href="https://github.com/lalitpatil891/Feedbacksystem" target="_blank"><button>Source Code
-                                </Source></button></a>
-                    </div>
-
-                    <!-- Add more project cards similarly -->
-                </div>
-
-            </div>
-
-            <div class="line"></div>
-
-            <div class="project-box-main">
-
-                <!-- PG Life -->
-                <div class="project-box">
-                    <img src="img/PG Life.jpg" alt="" class="project-img">
-                    <div class="project-title">
-                        PG LIFE
-                    </div>
-                    <div class="project-desc">
-                        <li>PG Life is a website where user can easily find PG as per their requirement.</li>
-                        <li></li>
-                    </div>
-
-                    <p class="languages">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">Bootstrap</span>
-                        <span class="badge">PHP</span>
-                        <span class="badge">JS</span>
-                        <span class="badge">MYSQL</span>
-                        <span class="badge">React</span>
-                    </p>
-                    <div class="duration">NOV 2023- JAN 2024</div>
-                    <div class="project-box-btn">
-                        <div><a href="http://pglifepro.infinityfreeapp.com/" target="_blank"><button class="btn1">See
-                                    Live</button></a></div>
-                        <div><a href="https://github.com/lalitpatil891/PG-Life" target="_blank"><button
-                                    class="btn2">Source Code</button></a></div>
-                    </div>
-                </div>
-                <!-- SportsPro -->
-                <div class="project-box">
-                    <img src="img/Sportpro.jpg" alt="" class="project-img">
-                    <div class="project-title">
-                        SPORT PRO
-                    </div>
-                    <div class="project-desc">
-                        <li>Sports events management system is a project that brings the entire manual process of
-                            sports event management online.</li>
-                        <li></li>
-                    </div>
-                    <p class="languages">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">Bootstrap</span>
-                        <span class="badge">PHP</span>
-                        <span class="badge">JS</span>
-                        <span class="badge">MYSQL</span>
-                    </p>
-                    <div class="duration">APRIL 2023- JUN 2023</div>
-
-                    <div class="project-box-btn">
-                          <!-- <div><a href="" target="_blank"><button class="btn1">See Live</button></a></div>  -->
-                        <div><a href="" target="_blank"><button class="btn2">Source Code</button></a></div>
-                    </div>
-                </div>
-                <!-- Air bnb -->
-                <div class="project-box">
-                    <img src="img/airbnb.jpg" alt="" class="project-img">
-                    <div class="project-title">
-                        AIRBNB (Landing page)
-                    </div>
-                    <div class="project-desc">
-                        <li>Airbnb, Inc. is an American company operating an online marketplace for short- and long-term
-                            homestays and experiences.</li>
-                        <li><a href="https://www.airbnb.co.in/" target="_blank">www.airbnb.co.in</a>(Original)</li>
-                    </div>
-                    <p class="languages">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                    </p>
-                    <div class="duration">FEB 2024</div>
-                    <div class="project-box-btn">
-                        <div><a href="https://lalitpatil891.github.io/airbnb/" target="_blank"><button class="btn1">See
-                                    Live</button></a></div>
-                        <div><a href="https://github.com/lalitpatil891/airbnb" target="_blank"><button
-                                    class="btn2">Source Code</button></a></div>
-                    </div>
-                </div>
-                <!-- Portfolio -->
-                <div class="project-box">
-                    <img src="img/portfolio.jpg" alt="" class="project-img">
-                    <div class="project-title">
-                        MY PORTFOLIO
-                    </div>
-                    <div class="project-desc">
-                        <li>Designed and developed a personal portfolio website to showcase my projects and skills.
-                            Built using HTML, CSS, and JavaScript for a clean and professional presentation.</li>
-                        <li></li>
-                    </div>
-                    <p class="languages">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">JS</span>
-                    </p>
-                    <div class="duration">FEB 2024</div>
-
-                    <div class="project-box-btn">
-                        <div><a href="" target="_blank"><button class="btn1">See Live</button></a></div>
-                        <div><a href="" target="_blank"><button class="btn2">Source Code</button></a></div>
-                    </div>
-                </div>
-                <!-- Smart solar -->
-                <div class="project-box">
+                <div id="mini-projects-grid" class="projects-grid">
+                    <!-- Projects will be loaded here dynamically -->
+                    <!-- 
+                 <div class="project-box">
                     <img src="img/SSGC.png" alt="" class="project-img">
                     <div class="project-title">
                         SMART SOLAR GRASS CUTTER
@@ -386,8 +301,8 @@
                     <div class="project-desc">
                         <li>Designed and developed a smart solar grass cutter with autonomous lawn coverage using
                             microcontrollers, sensors, solar, mobile application.</li>
-                        <!-- <li>- Implemented path planning algorithms and obstacle detection for efficient -->
-                        <!-- and safe operation.</li> -->
+                         <li>- Implemented path planning algorithms and obstacle detection for efficient 
+                        and safe operation.</li> 
                     </div>
                     <p class="languages">
                         <span class="badge">Arduino IDE</span>
@@ -402,70 +317,49 @@
                         <div><a href="https://github.com/lalitpatil891/Smart-Solar-Grass-Cutter" target="_blank"><button
                                     class="btn2">Source Code</button></a></div>
                     </div>
+                </div> -->
                 </div>
+            </div>
 
+            <div class="line"></div>
+
+            <div class="background">
+                <div class="background-title">Main Projects</div>
+            </div>
+
+            <div id="main-projects-container" class="project-box-main">
+                <!-- Projects will be loaded here dynamically -->
             </div>
         </div>
-    </div>
-    </div>
 
-    <!-- background -->
-
-    <div id="background" class="container-3">
-        <div class="background">
-            <div class="background-title">Trainings & Certificates</div>
-        </div>
-        <div class="bg-box-main">
-            <div class="bg-box-cert">
-                <img src="img/achivement.png" alt="" class="logo-bg">
-
-                <div class="bg-title">
-                    Web Development
-                </div>
-                <hr class="bg-box-line">
-                <div class="college-name">Internshala Trainings, Online <br> Dec 2023 - Feb 2024</div>
-                <div class="course-title">Successfully completed a 8 weeks online certiﬁed training on Web Development.
-                    The training consisted of HTML,
-                    CSS, Bootstrap, DBMS, PHP, JS, React, and Final Project
-                    modules. I scored 100% in the ﬁnal assessment and was
-                    a top performer in the training.</div>
-                <div class="marks"><a href="https://trainings.internshala.com/view_certificate/3oyhvs7sg7x/ez2plwgejbq/"
-                        target="_blank">Certificate</a></div>
+        <!-- Certificates Section (renamed ID to avoid duplicate) -->
+        <div id="certificates" class="container-3">
+            <div class="background">
+                <div class="background-title">Trainings & Certificates</div>
             </div>
-
-            <div class="bg-box-cert">
-                <img src="img/achivement.png" alt="" class="logo-bg">
-
-                <div class="bg-title">
-                    Android App Development
-                </div>
-                <hr class="bg-box-line">
-                <div class="college-name">Internshala Trainings, Online <br>
-                    Dec 2023 - Mar 2024</div>
-                <div class="course-title">Successfully completed a 8 weeks online certiﬁed training on Android App
-                    Development. The training consisted of
-                    Introduction to Android, World of Kotlin, Android Kick-Oﬀ,Higher Order Functionalities, and The
-                    Final Project
-                    modules. I scored 98% in the ﬁnal assessment and was a
-                    top performer in the training.</div>
-                <div class="marks"><a href="https://trainings.internshala.com/s/v/3266530/1a404c14"
-                        target="_blank">Certificate</a></div>
-            </div>
-
-            <!---<div class="bg-box">
+            <div class="bg-box-main">
+                <div class="bg-box-cert">
                     <img src="img/achivement.png" alt="" class="logo-bg">
 
                     <div class="bg-title">
-                        Internship & Job Preparation
+                        Web Development
                     </div>
                     <hr class="bg-box-line">
-                    <div class="college-name">Internshala Trainings, Online <br>
-                        Jan 2024 - Feb 2024</div>
-                    <div class="course-title">Successfully completed a 4 weeks online certiﬁed training on Internship & Job Preparation. The training consisted of Getting Started with the Job Hunt, Building up your Gears,Going at the Front, and The Final Project modules. I scored 100% in the  ﬁnal assessment and was a top performer in the training.</div>
-                    <div class="marks"><a href="https://trainings.internshala.com/s/v/3256306/c77faec4" target="_blank">Certificate</a></div>
-                </div> --->
+                    <div class="college-name">Internshala Trainings, Online <br> Dec 2023 - Feb 2024</div>
+                    <div class="course-title">Successfully completed a 8 weeks online certiﬁed training on Web
+                        Development.
+                        The training consisted of HTML,
+                        CSS, Bootstrap, DBMS, PHP, JS, React, and Final Project
+                        modules. I scored 100% in the ﬁnal assessment and was
+                        a top performer in the training.</div>
+                    <div class="marks"><a
+                            href="https://trainings.internshala.com/view_certificate/3oyhvs7sg7x/ez2plwgejbq/"
+                            target="_blank">Certificate</a></div>
+                </div>
+            </div>
         </div>
     </div>
+
     <!------------------------footer-------------------------->
     <footer id="footer">
         <div class="oneline">
@@ -496,7 +390,7 @@
         </div>
     </footer>
     <hr class="footer-hr">
-    <p class="end">@2024-Developed with <i class="fa-solid fa-heart"></i> by Lalit Patil</p>
+    <p class="end">© 2024 - Developed with <i class="fa-solid fa-heart"></i> by Lalit Patil</p>
 
     </div>
     <script>
@@ -513,6 +407,110 @@
                 }
             }
         }
+
+        // Dynamic project loader (improved error handling)
+        async function loadProjects() {
+            const miniGrid = document.getElementById('mini-projects-grid');
+            const mainContainer = document.getElementById('main-projects-container');
+
+            // Show loading message
+            miniGrid.innerHTML = '<p>Loading projects...</p>';
+            mainContainer.innerHTML = '<p>Loading projects...</p>';
+
+            try {
+                const response = await fetch('data/projects.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                // Clear loading
+                miniGrid.innerHTML = '';
+                mainContainer.innerHTML = '';
+
+                // Load Mini React Projects (no images by default)
+                if (data.miniReactProjects && data.miniReactProjects.length > 0) {
+                    data.miniReactProjects.forEach(project => {
+                        const card = document.createElement('div');
+                        card.className = 'project-card';
+                        let buttonsHTML = '';
+                        if (project.liveLink) {
+                            buttonsHTML += `<a href="${project.liveLink}" target="_blank"><button>See Live</button></a>`;
+                        }
+                        if (project.sourceLink) {
+                            buttonsHTML += `<a href="${project.sourceLink}" target="_blank"><button>Source Code</button></a>`;
+                        }
+                        card.innerHTML = `
+                        <h3 class="project-title">${project.title}</h3>
+                        <p>${project.description}</p>
+                        ${buttonsHTML}
+                    `;
+                        miniGrid.appendChild(card);
+                    });
+                } else {
+                    miniGrid.innerHTML = '<p>No mini React projects available.</p>';
+                }
+
+                // Load Main Projects (with images)
+                if (data.mainProjects && data.mainProjects.length > 0) {
+                    data.mainProjects.forEach(project => {
+                        const box = document.createElement('div');
+                        box.className = 'project-box';
+                        let descHTML = '<div class="project-desc">';
+                        (project.description || []).forEach(item => {
+                            descHTML += `<li>${item}</li>`;
+                        });
+                        descHTML += '</div>';
+
+                        let langHTML = '<p class="languages">';
+                        (project.languages || []).forEach(lang => {
+                            langHTML += `<span class="badge">${lang}</span>`;
+                        });
+                        langHTML += '</p>';
+
+                        let btnHTML = '<div class="project-box-btn">';
+                        if (project.liveLink) {
+                            btnHTML += `<div><a href="${project.liveLink}" target="_blank"><button class="btn1">See Live</button></a></div>`;
+                        }
+                        if (project.sourceLink) {
+                            btnHTML += `<div><a href="${project.sourceLink}" target="_blank"><button class="btn2">Source Code</button></a></div>`;
+                        }
+                        btnHTML += '</div>';
+
+                        const imgSrc = project.image || 'img/placeholder.jpg'; // Fallback if no image
+                        box.innerHTML = `
+                        <img src="${imgSrc}" alt="Screenshot of ${project.title}" class="project-img" loading="lazy" onerror="this.src='img/placeholder.jpg';">
+                        <div class="project-title">${project.title}</div>
+                        ${descHTML}
+                        ${langHTML}
+                        <div class="duration">${project.duration || ''}</div>
+                        ${btnHTML}
+                    `;
+                        mainContainer.appendChild(box);
+                    });
+                } else {
+                    mainContainer.innerHTML = '<p>No main projects available.</p>';
+                }
+
+            } catch (error) {
+                console.error('Error loading projects:', error);
+                // User-friendly message for common issues
+                let errorMsg = '<p>Error loading projects. ';
+                if (error.message.includes('fetch') || error.message.includes('CORS')) {
+                    errorMsg += 'This is likely because you opened the file directly (file://). ';
+                    errorMsg += 'Please run a local server (e.g., VS Code Live Server) or deploy to GitHub/Netlify. ';
+                } else {
+                    errorMsg += 'Check if data/projects.json exists and is valid JSON. ';
+                }
+                errorMsg += 'See console for details.</p>';
+
+                miniGrid.innerHTML = errorMsg;
+                mainContainer.innerHTML = errorMsg;
+            }
+        }
+
+        // Load projects when the page loads
+        window.addEventListener('load', loadProjects);
     </script>
 </body>
 
