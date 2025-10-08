@@ -58,7 +58,7 @@
         <!-- home -->
         <div class="glow-theam">
 
-            <!-- <img class="glow-img" src="/img/3-shadow.png" alt=""> -->
+            <img class="glow-img" src="/img/3-shadow.png" alt="">
             <img class="glow-img-1" src="/img/grid.png" alt="">
             <!-- <img class="glow-img-2" src="/img/2-shadow.png" alt=""> -->
 
@@ -366,7 +366,7 @@
     <section id="contact" class="container-3">
         <div class="background">
             <div class="background-title">Get In Touch</div>
-            <p class="p4">Have a question or project idea? Send me a message!</p>
+            <p class="p4">I’d love to connect! Feel free to drop a message or share your thoughts.</p>
         </div>
         <div class="contact-form-container">
             <form id="contactForm" class="contact-form">
@@ -380,10 +380,10 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required placeholder="Tell me about your project..."
+                    <textarea id="message" name="message" required placeholder="Write your message here…"
                         rows="5"></textarea>
                 </div>
-                <button type="submit" class="btn4">Send Message</button>
+                <button type="submit" class="btn6">Send Message</button>
             </form>
             <div id="formMessage" class="form-message"></div>
         </div>
@@ -421,7 +421,7 @@
     <p class="end">© Developed with <i class="fa-solid fa-heart"></i> by Lalit Patil</p>
 
     </div>
-    <!-- <script>
+    <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -537,221 +537,100 @@
             }
         }
 
-         // New: EmailJS Initialization and Form Handler
-        (function() {
-            // Replace with your EmailJS IDs
-            emailjs.init("YOUR_PUBLIC_KEY"); // e.g., "user_ghi789"
+        // New: EmailJS Initialization and Form Handler (Updated with Auto-Reply)
+        (function () {
+            emailjs.init("VobnfM96GifajQaz1");
 
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent default form submit
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const formMessage = document.getElementById('formMessage'); // ✅ Added here
+                formMessage.textContent = ''; // Clear previous message
+                formMessage.className = 'form-message'; // Reset style
+
+                const name = document.getElementById('user_name').value.trim();
+                const email = document.getElementById('user_email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                // === Basic Validation ===
+                if (!name || !email || !message) {
+                    formMessage.textContent = "⚠️ Please fill in all fields.";
+                    formMessage.className = "form-message error";
+                    return;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    formMessage.textContent = "⚠️ Please enter a valid email address.";
+                    formMessage.className = "form-message error";
+                    return;
+                }
 
                 const formData = {
-                    from_name: document.getElementById('user_name').value,
-                    from_email: document.getElementById('user_email').value,
-                    message: document.getElementById('message').value
+                    from_name: name,
+                    from_email: email,
+                    message: message,
+                    time: new Date().toLocaleString('en-US', {
+                        weekday: 'short',
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        hour12: true
+                    })
                 };
 
-                // Show loading
+                const messageSummary = message.length > 100 ? message.substring(0, 100) + '...' : message;
+
                 const submitBtn = event.target.querySelector('button[type="submit"]');
                 const originalText = submitBtn.innerHTML;
                 submitBtn.innerHTML = 'Sending...';
                 submitBtn.disabled = true;
 
-                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData) // e.g., 'service_abc123', 'template_def456'
-                    .then(function(response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        document.getElementById('formMessage').innerHTML = '<p class="success">Message sent successfully! I\'ll get back to you soon.</p>';
-                        document.getElementById('contactForm').reset(); // Clear form
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                        document.getElementById('formMessage').innerHTML = '<p class="error">Oops! Something went wrong. Please try again or email me directly.</p>';
+                // === Step 1: Send to Lalit ===
+                emailjs.send('service_ckgn4g5', 'template_8cjkeib', formData)
+                    .then(function (response) {
+                        console.log('Original Email SUCCESS!', response.status, response.text);
+
+                        // === Step 2: Send Auto-Reply ===
+                        const replyData = {
+                            from_name: name,
+                            email: email,
+                            message_summary: messageSummary,
+                            time: formData.time
+                        };
+
+                        emailjs.send('service_fj1igvs', 'template_ggq86uk', replyData)
+                            .then(function (replyResponse) {
+                                console.log('Auto-Reply SUCCESS!', replyResponse.status, replyResponse.text);
+                            }, function (replyError) {
+                                console.log('Auto-Reply FAILED (but original sent OK)...', replyError);
+                            });
+
+                        // ✅ Success Message
+                        formMessage.textContent = "✅ Your message has been sent successfully! You'll receive a confirmation email shortly, and I'll get back to you soon.";
+                        formMessage.className = "form-message success";
+                        document.getElementById('contactForm').reset();
+
+                    }, function (error) {
+                        console.log('Original Email FAILED...', error);
+
+                        // ❌ Error Message
+                        formMessage.textContent = "❌ Oops! Something went wrong. Please try again or email me directly at lalit.patil@gmail.com.";
+                        formMessage.className = "form-message error";
                     })
-                    .finally(function() {
+                    .finally(function () {
                         submitBtn.innerHTML = originalText;
                         submitBtn.disabled = false;
                     });
             });
         })();
 
+
         // Load projects when the page loads
         window.addEventListener('load', loadProjects);
-    </script> -->
-
-    <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Optional: Close dropdown if clicked outside
-    window.onclick = function (event) {
-        if (!event.target.closest('.dropdown')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            for (var i = 0; i < dropdowns.length; i++) {
-                dropdowns[i].classList.remove('show');
-            }
-        }
-    }
-
-    // Dynamic project loader (improved error handling)
-    async function loadProjects() {
-        const miniGrid = document.getElementById('mini-projects-grid');
-        const mainContainer = document.getElementById('main-projects-container');
-
-        // Show loading message
-        miniGrid.innerHTML = '<p>Loading projects...</p>';
-        mainContainer.innerHTML = '<p>Loading projects...</p>';
-
-        try {
-            const response = await fetch('data/projects.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const data = await response.json();
-
-            // Clear loading
-            miniGrid.innerHTML = '';
-            mainContainer.innerHTML = '';
-
-            // Load Mini React Projects (no images by default)
-            if (data.miniReactProjects && data.miniReactProjects.length > 0) {
-                data.miniReactProjects.forEach(project => {
-                    const card = document.createElement('div');
-                    card.className = 'project-card';
-                    let buttonsHTML = '';
-                    if (project.liveLink) {
-                        buttonsHTML += `<a href="${project.liveLink}" target="_blank"><button>See Live</button></a>`;
-                    }
-                    if (project.sourceLink) {
-                        buttonsHTML += `<a href="${project.sourceLink}" target="_blank"><button>Source Code</button></a>`;
-                    }
-                    card.innerHTML = `
-                        <h3 class="project-title">${project.title}</h3>
-                        <p class="mini-proj-para">${project.description}</p>
-                        ${buttonsHTML}
-                    `;
-                    miniGrid.appendChild(card);
-                });
-            } else {
-                miniGrid.innerHTML = '<p>No mini React projects available.</p>';
-            }
-
-            // Load Main Projects (with images)
-            if (data.mainProjects && data.mainProjects.length > 0) {
-                data.mainProjects.forEach(project => {
-                    const box = document.createElement('div');
-                    box.className = 'project-box';
-                    let descHTML = '<div class="project-desc">';
-                    (project.description || []).forEach(item => {
-                        descHTML += `<li>${item}</li>`;
-                    });
-                    descHTML += '</div>';
-
-                    let langHTML = '<p class="languages">';
-                    (project.languages || []).forEach(lang => {
-                        langHTML += `<span class="badge">${lang}</span>`;
-                    });
-                    langHTML += '</p>';
-
-                    let btnHTML = '<div class="project-box-btn">';
-                    if (project.liveLink) {
-                        btnHTML += `<div><a href="${project.liveLink}" target="_blank"><button class="btn1">See Live</button></a></div>`;
-                    }
-                    if (project.sourceLink) {
-                        btnHTML += `<div><a href="${project.sourceLink}" target="_blank"><button class="btn2">Source Code</button></a></div>`;
-                    }
-                    btnHTML += '</div>';
-
-                    const imgSrc = project.image || 'img/placeholder.jpg'; // Fallback if no image
-                    box.innerHTML = `
-                        <img src="${imgSrc}" alt="Screenshot of ${project.title}" class="project-img" loading="lazy" onerror="this.src='img/placeholder.jpg';">
-                        <div class="project-title">${project.title}</div>
-                        ${descHTML}
-                        ${langHTML}
-                        <div class="duration">${project.duration || ''}</div>
-                        ${btnHTML}
-                    `;
-                    mainContainer.appendChild(box);
-                });
-            } else {
-                mainContainer.innerHTML = '<p>No main projects available.</p>';
-            }
-
-        } catch (error) {
-            console.error('Error loading projects:', error);
-            // User-friendly message for common issues
-            let errorMsg = '<p>Error loading projects. ';
-            if (error.message.includes('fetch') || error.message.includes('CORS')) {
-                errorMsg += 'This is likely because you opened the file directly (file://). ';
-                errorMsg += 'Please run a local server (e.g., VS Code Live Server) or deploy to GitHub/Netlify. ';
-            } else {
-                errorMsg += 'Check if data/projects.json exists and is valid JSON. ';
-            }
-            errorMsg += 'See console for details.</p>';
-
-            miniGrid.innerHTML = errorMsg;
-            mainContainer.innerHTML = errorMsg;
-        }
-    }
-
-    // New: EmailJS Initialization and Form Handler (Updated with Timestamp)
-    (function() {
-        // Replace with your actual EmailJS IDs from dashboard
-        emailjs.init("VobnfM96GifajQaz1"); // e.g., "user_abc123" (Public Key/User ID)
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submit
-
-            // Basic validation (optional: ensures fields aren't empty)
-            const name = document.getElementById('user_name').value.trim();
-            const email = document.getElementById('user_email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            if (!name || !email || !message) {
-                document.getElementById('formMessage').innerHTML = '<p class="error">Please fill in all fields.</p>';
-                return;
-            }
-
-            const formData = {
-                from_name: name,
-                from_email: email,
-                message: message,
-                // Added: Automatic timestamp for {{time}} in template
-                time: new Date().toLocaleString('en-US', { 
-                    weekday: 'short', 
-                    year: 'numeric', 
-                    month: 'short', 
-                    day: 'numeric', 
-                    hour: '2-digit', 
-                    minute: '2-digit',
-                    hour12: true  // Use AM/PM format
-                })  // e.g., "Tue, Oct 15, 2024, 10:30 AM"
-            };
-
-            // Show loading
-            const submitBtn = event.target.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = 'Sending...';
-            submitBtn.disabled = true;
-
-            // Replace with your actual Service ID and Template ID
-            emailjs.send("service_ckgn4g5","template_8cjkeib", formData)  // e.g., 'service_def456', 'template_ghi789'
-                .then(function(response) {
-                    console.log('EmailJS SUCCESS!', response.status, response.text);
-                    document.getElementById('formMessage').innerHTML = '<p class="success">Message sent successfully! I\'ll get back to you soon.</p>';
-                    document.getElementById('contactForm').reset(); // Clear form
-                }, function(error) {
-                    console.log('EmailJS FAILED...', error);
-                    document.getElementById('formMessage').innerHTML = '<p class="error">Oops! Something went wrong. Please try again or email me directly at lalitpatil@example.com.</p>';
-                })
-                .finally(function() {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                });
-        });
-    })();
-
-    // Load projects when the page loads
-    window.addEventListener('load', loadProjects);
-</script>
+    </script>
 </body>
 
 </html>
