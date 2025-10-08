@@ -46,7 +46,7 @@
   ],
   "mainProjects": [
     {
-      "title": "ecommerce-react-springboot",
+      "title": "Ecommerce-React-Springboot",
       "image": "img/ecom.png",
       "description": [
         "Full-stack e-commerce app using Spring Boot & React.js with product management, shopping cart, image upload, and keyword search."
@@ -100,7 +100,7 @@
       "sourceLink": "https://github.com/lalitpatil891/PG-Life"
     },
     {
-      "title": "SMART SOLAR GRASS CUTTER",
+      "title": "Smart Solar Grass Cutter",
       "image": "img/SSGC.png",
       "description": [
         "Designed and developed a smart solar grass cutter with autonomous lawn coverage using microcontrollers, sensors, solar, mobile application."
