@@ -17,6 +17,7 @@
 
 <body>
     <div class="main">
+
         <div class="nav">
             <div class="logo">Portfolio</div>
             <div class="nav-list">
@@ -26,7 +27,7 @@
                 <!-- <div class="li-nav"><a href="#certificates">Trainings & Certificates</a></div> -->
                 <div class="li-nav"><a href="#skills">Skills</a></div>
                 <div class="li-nav"><a href="#project">Projects</a></div>
-                <div class="li-nav"><a href="#footer">Contact</a></div>
+                <div class="li-nav"><a href="#contact">Contact</a></div>
 
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">
@@ -50,7 +51,7 @@
                         <!-- <a href="#certificates">Trainings & Certificates</a> -->
                         <a href="#skills">Skills</a>
                         <a href="#project">Projects</a>
-                        <a href="#footer">Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +61,8 @@
 
             <img class="glow-img" src="/img/3-shadow.png" alt="">
             <img class="glow-img-1" src="/img/grid.png" alt="">
-            <!-- <img class="glow-img-2" src="/img/2-shadow.png" alt=""> -->
+            <img class="glow-img-2" src="/img/2-shadow.png" alt="">
+
 
 
             <div id="home" class="container">
@@ -93,6 +95,11 @@
 
                 <div class="my-image">
                     <img src="img/I-am.png" alt="" class="image-lalit">
+                    <!-- wakatime.com-badge -->
+                    <a target="_blank" href="https://wakatime.com/@018db10d-ffa2-442f-8d5f-13e55623110b"><img
+                            src="https://wakatime.com/badge/user/018db10d-ffa2-442f-8d5f-13e55623110b.svg"
+                            alt="Total time coded since Feb 16 2024" /></a>
+
                 </div>
                 <div class="about-text-box">
                     <div class="about-text-heading">
@@ -109,9 +116,11 @@
                                 href="https://drive.google.com/file/d/1BjFo2lfeCBUvDZRs766DkON9ZKMSO0Ln/view?usp=sharing"
                                 target="_blank"><button class="btn4">Resume</button></a></div>
                     </div>
+                 
                 </div>
             </div>
         </div>
+
         <!-- background -->
         <div id="background" class="container-3">
             <div class="background">
@@ -156,6 +165,7 @@
 
             </div>
         </div>
+
         <!-------------Skills------------>
         <section id="skills">
             <div class="container-5">
@@ -275,7 +285,20 @@
                     </div>
                 </div>
             </div>
+
         </section>
+
+        <!------------daily state----------------->
+        <div class="daily-state-container">
+            <div class="daily-state-title">I believe consistency beats intensity — here’s my year in code.</div>
+            <div class="scroll-div">
+                <figure class="daily-state"><embed
+                        src="https://wakatime.com/share/@lalitpatil891/25c1ade5-423f-406b-b8d1-00791ae6adbe.svg"></embed>
+                </figure>
+            </div>
+            <p class="daily-state-label">^</p>
+            <p class="daily-state-label">Coding Activity</p>
+        </div>
 
         <!------page 4 - PROJECT----->
         <div id="project" class="container-4">
@@ -331,6 +354,16 @@
                     <!-- Projects will be loaded here dynamically -->
 
                 </div>
+            </div>
+        </div>
+        <!--- Languages Gragh --->
+        <div class="languages-graph-container">
+            <div class="languages-graph-title">Development Time Breakdown</div>
+            <p class="languages-graph-desc">A breakdown of where I’ve spent most of my development time.</p>
+            <div class="scroll-div-lang">
+                <figure class="daily-lang-track"><embed
+                        src="https://wakatime.com/share/@lalitpatil891/536e66fb-3f80-4b22-8804-8db370a6c720.svg"></embed>
+                </figure>
             </div>
         </div>
 
@@ -609,7 +642,7 @@
                             });
 
                         // ✅ Success Message
-                        formMessage.textContent = "✅ Your message has been sent successfully! You'll receive a confirmation email shortly, and I'll get back to you soon.";
+                        formMessage.textContent = "Your message has been sent successfully! You'll receive a confirmation email shortly, and I'll get back to you soon.";
                         formMessage.className = "form-message success";
                         document.getElementById('contactForm').reset();
 
@@ -617,7 +650,7 @@
                         console.log('Original Email FAILED...', error);
 
                         // ❌ Error Message
-                        formMessage.textContent = "❌ Oops! Something went wrong. Please try again or email me directly at lalit.patil@gmail.com.";
+                        formMessage.textContent = "Oops! Something went wrong. Please try again or email me directly at lalit.patil@gmail.com.";
                         formMessage.className = "form-message error";
                     })
                     .finally(function () {

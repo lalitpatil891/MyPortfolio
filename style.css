@@ -9,6 +9,17 @@
 
 }
 
+/* ::selection {
+  background-color: #111827; 
+  color: #f9fafb; 
+} */
+
+::selection {
+  background-color: #a3e635; 
+  color: #000000; 
+}
+
+
 html,
 body {
     height: auto;
@@ -34,6 +45,80 @@ body {
 
 @media (min-width:601px) {
 
+    /* -----------daily-state start------------ */
+    .daily-state-container {
+        display: flex;
+
+        margin: -20px auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        /* border: 1px solid red; */
+
+    }
+
+    .daily-state-title {
+        /* color: #AB8BFF; */
+        font-size: large;
+        font-weight: 500;
+        padding: 8px;
+        font-style: italic;
+        margin-bottom: 10px;
+        background: linear-gradient(to right, #8BAAC5, #36526C, #8BAAC5);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .scroll-div {
+        padding: 10px;
+        width: 100%;
+
+        /* Optional: Custom scrollbar for better UX */
+        .daily-state::-webkit-scrollbar {
+            height: 4px;
+
+        }
+
+        .daily-state::-webkit-scrollbar-track {
+            background: #888395;
+            border-radius: 5px;
+        }
+
+        .daily-state::-webkit-scrollbar-thumb {
+            background: #2E446B;
+            border-radius: 5px;
+
+        }
+
+        .daily-state::-webkit-scrollbar-thumb:hover {
+            background: #36526C;
+        }
+    }
+
+    .daily-state-label {
+        color: #888395;
+        text-align: left;
+        /* border: 1px solid red;  */
+        margin: -4px;
+        padding: 0px;
+        font-size: smaller;
+    }
+
+    .daily-state {
+        /* width: 50%; */
+        margin: 0px auto;
+        background-color: #030014;
+        overflow-x: auto;
+        /* Enables horizontal scroll */
+        overflow-y: hidden;
+        /* Hide vertical scrollbar */
+        white-space: nowrap;
+        /* Prevent wrapping */
+    }
+
+    /* -----------daily-state start------------ */
 
     .nav {
         width: 100%;
@@ -48,6 +133,7 @@ body {
         font-size: 1.2vw;
         z-index: 99;
         border-bottom: 1px solid #cecefb;
+        position: fixed;
     }
 
     .logo {
@@ -79,10 +165,10 @@ body {
         transform: rotate(2deg);
         transition: 420ms;
         font-weight: 600;
-        
+
     }
 
-    .li-nav a:hover{
+    .li-nav a:hover {
         color: antiquewhite;
     }
 
@@ -724,14 +810,15 @@ body {
     }
 
     /* --------------------BACKGROUND Education----------------- */
+
     .container-3 {
         width: 100%;
         height: auto;
         /* border: 1px solid saddlebrown; */
         /* margin-top: -25px;
             padding: 120px 0px; */
-        padding-top: 180px;
-        padding-bottom: 180px;
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
 
     .background {
@@ -1217,7 +1304,96 @@ body {
         text-decoration: underline;
     }
 
-    /* -------------Reach out box----------------- */
+    /* --- Languages Gragh --- */
+
+    /* Container setup */
+    .languages-graph-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 4rem auto;
+        padding: 1.5rem;
+        color: #e0e0ff;
+        text-align: center;
+        background: transparent;
+        /* border: 1px solid red; */
+        margin-bottom: -100px;
+    }
+
+    /* Title and description */
+    .languages-graph-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        background: linear-gradient(to right, #c8b6ff, #8f6aff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .languages-graph-desc {
+        font-size: 1rem;
+        color: #aaa9c9;
+        /* margin-bottom: 1.5rem; */
+        text-align: left;
+    }
+
+    /* Scroll container */
+    .scroll-div-lang {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        border-radius: 10px;
+        padding-bottom: 0.5rem;
+        scrollbar-width: thin;
+        /* For Firefox */
+        scrollbar-color: #7f6cff #0a0812;
+    }
+
+    /* WebKit scrollbar styling */
+    .scroll-div-lang::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .scroll-div-lang::-webkit-scrollbar-track {
+        background: #0a0812;
+        border-radius: 10px;
+    }
+
+    .scroll-div-lang::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, #7f6cff, #b7a8ff);
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .scroll-div-lang::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(90deg, #a18aff, #d0c4ff);
+    }
+
+    /* Embedded graph responsiveness */
+    .daily-lang-track {
+        display: inline-block;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .daily-lang-track embed {
+        width: 100%;
+        height: auto;
+        min-width: 600px;
+        /* Keeps chart readable on small screens */
+    }
+
+
+
+
+    /* ----Reach out box------ */
+
+    #contact {
+        /* padding-top: 100px; */
+        /* creates breathing space below the sticky navbar */
+        scroll-margin-top: 20px;
+        /* ensures smooth anchor scrolling */
+    }
 
     .contact-form-container {
 
@@ -1459,6 +1635,82 @@ body {
 
 @media (max-width:600px) {
 
+    /* -----------daily-state start------------ */
+    .daily-state-container {
+        display: flex;
+
+        margin: 0px auto;
+        /* margin-top: -80px; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #a8b5db;
+
+    }
+
+    .daily-state-title {
+        /* color: #AB8BFF; */
+        font-size: large;
+        font-weight: 600;
+        padding: 8px;
+        font-style: italic;
+        margin: 10px;
+        background: linear-gradient(to right, #36526C, #8BAAC5);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .scroll-div {
+        padding: 10px;
+        width: 100%;
+
+        /* Optional: Custom scrollbar for better UX */
+        .daily-state::-webkit-scrollbar {
+            height: 1px;
+
+        }
+
+        .daily-state::-webkit-scrollbar-track {
+            background: #888395;
+            border-radius: 5px;
+        }
+
+        .daily-state::-webkit-scrollbar-thumb {
+            background: #2E446B;
+            border-radius: 5px;
+
+        }
+
+        .daily-state::-webkit-scrollbar-thumb:hover {
+            background: #36526C;
+        }
+    }
+
+    .daily-state-label {
+        color: #888395;
+        text-align: left;
+        /* border: 1px solid red;  */
+        margin: -4px;
+        padding: 0px;
+        font-size: smaller;
+    }
+
+    .daily-state {
+        /* width: 50%; */
+        margin: 0px auto;
+        background-color: #030014;
+        overflow-x: auto;
+        /* Enables horizontal scroll */
+        overflow-y: hidden;
+        /* Hide vertical scrollbar */
+        white-space: nowrap;
+        /* Prevent wrapping */
+    }
+
+    /* -----------daily-state start------------ */
+
     /*=================== NAVBAR ===================== */
 
     .nav {
@@ -1475,6 +1727,7 @@ body {
         font-size: 1.20vw;
         z-index: 3;
         border-bottom: 0.01px solid #cecefb;
+        position: fixed;
     }
 
     .logo {
@@ -2242,7 +2495,7 @@ body {
         padding: 120px 0px; */
         /* background-color: aquamarine; */
         padding-top: 50px;
-        padding-bottom: 180px;
+        padding-bottom: 10px;
         z-index: 1;
 
     }
@@ -2353,7 +2606,7 @@ body {
     }
 
     .container-5 {
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
         display: block;
         color: White;
@@ -2445,7 +2698,7 @@ body {
 
         width: 100%;
         height: auto;
-        padding-bottom: 80px;
+        padding-bottom: 20px;
         padding-top: 40px;
         /* background-color: lightgreen; */
         z-index: 1;
@@ -2722,7 +2975,95 @@ body {
         text-decoration: underline;
     }
 
+
+    /* --- Languages Gragh --- */
+
+    /* Container setup */
+    .languages-graph-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 4rem auto;
+        padding: 1.5rem;
+        color: #e0e0ff;
+        text-align: center;
+        background: transparent;
+        /* border: 1px solid red; */
+        margin-bottom: -100px;
+    }
+
+    /* Title and description */
+    .languages-graph-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        background: linear-gradient(to right, #c8b6ff, #8f6aff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .languages-graph-desc {
+        font-size: 1rem;
+        color: #aaa9c9;
+        /* margin-bottom: 1.5rem; */
+        text-align: left;
+    }
+
+    /* Scroll container */
+    .scroll-div-lang {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        border-radius: 10px;
+        padding-bottom: 0.5rem;
+        scrollbar-width: thin;
+        /* For Firefox */
+        scrollbar-color: #7f6cff #0a0812;
+    }
+
+    /* WebKit scrollbar styling */
+    .scroll-div-lang::-webkit-scrollbar {
+        height: 2px;
+    }
+
+    .scroll-div-lang::-webkit-scrollbar-track {
+        background: #0a0812;
+        border-radius: 10px;
+    }
+
+    .scroll-div-lang::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, #7f6cff, #b7a8ff);
+        border-radius: 10px;
+        transition: background 0.3s ease;
+    }
+
+    .scroll-div-lang::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(90deg, #a18aff, #d0c4ff);
+    }
+
+    /* Embedded graph responsiveness */
+    .daily-lang-track {
+        display: inline-block;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .daily-lang-track embed {
+        width: 100%;
+        height: auto;
+        min-width: 600px;
+        /* Keeps chart readable on small screens */
+    }
+
+
     /* -------------Reach out box----------------- */
+
+    #contact {
+        /* padding-top: 100px; */
+        /* creates breathing space below the sticky navbar */
+        /* scroll-margin-top: 100px; */
+        /* ensures smooth anchor scrolling */
+    }
 
     .contact-form-container {
         width: 85%;
@@ -2732,7 +3073,7 @@ body {
         border-radius: 12px;
         /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08); */
         padding: 15px;
-        max-width: 600px;
+        /* max-width: 600px; */
         transition: all 0.3s ease;
     }
 
