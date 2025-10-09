@@ -15,8 +15,8 @@
 } */
 
 ::selection {
-  background-color: #a3e635; 
-  color: #000000; 
+    background-color: #a3e635;
+    color: #000000;
 }
 
 
@@ -385,7 +385,7 @@ body {
 
         26%,
         27% {
-            content: "Software Developer";
+            content: "Software Developer  ";
         }
 
         /* === Erase === */
@@ -492,7 +492,7 @@ body {
 
         69%,
         70% {
-            content: "Full Stack Developer";
+            content: "Full Stack Developer  ";
         }
 
         /* === Erase === */
@@ -569,10 +569,9 @@ body {
 
         99%,
         100% {
-            content: "Java Developer";
+            content: "Java Developer  ";
         }
     }
-
 
     @keyframes blink {
 
@@ -585,6 +584,7 @@ body {
             opacity: 0;
         }
     }
+
 
     .typewriter {
         --caret: currentcolor;
@@ -1347,6 +1347,8 @@ body {
         scrollbar-width: thin;
         /* For Firefox */
         scrollbar-color: #7f6cff #0a0812;
+        /* border: 1px solid red   ; */
+        margin-bottom: 20px;
     }
 
     /* WebKit scrollbar styling */
@@ -1608,16 +1610,18 @@ body {
 
     .end {
         text-align: center;
-        margin-top: -11 px;
+        /* margin-top: 11 px;s */
         font-size: 16px;
         color: #cecefb;
         padding: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #030014;
+        /* border: 1px solid red; */
     }
 
     .footer-hr {
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        display: none;
     }
 
 
@@ -3011,6 +3015,7 @@ body {
 
     /* Scroll container */
     .scroll-div-lang {
+        /* border: 1px solid red; */
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
@@ -3018,12 +3023,14 @@ body {
         padding-bottom: 0.5rem;
         scrollbar-width: thin;
         /* For Firefox */
-        scrollbar-color: #7f6cff #0a0812;
+        scrollbar-color: #aaa9c9 #0a0812;
+        margin-bottom: 30px;
     }
 
     /* WebKit scrollbar styling */
     .scroll-div-lang::-webkit-scrollbar {
-        height: 2px;
+        height: 1px;
+        /* border: 1px solid red;s */
     }
 
     .scroll-div-lang::-webkit-scrollbar-track {
@@ -3170,6 +3177,8 @@ body {
         padding-bottom: 10px;
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
         z-index: 1;
+        margin-top: 50px;
+        /* border: red 1px solid; */
     }
 
     .social {

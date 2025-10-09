@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Added Font Awesome for footer heart icon -->
-
+    <link rel="icon" type="image/png" href="/img/LP.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -587,14 +587,14 @@
 
                 // === Basic Validation ===
                 if (!name || !email || !message) {
-                    formMessage.textContent = "⚠️ Please fill in all fields.";
+                    formMessage.textContent = "Please fill in all fields.";
                     formMessage.className = "form-message error";
                     return;
                 }
 
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email)) {
-                    formMessage.textContent = "⚠️ Please enter a valid email address.";
+                    formMessage.textContent = "Please enter a valid email address.";
                     formMessage.className = "form-message error";
                     return;
                 }
@@ -633,15 +633,15 @@
                             message_summary: messageSummary,
                             time: formData.time
                         };
-
-                        emailjs.send('service_fj1igvs', 'template_ggq86uk', replyData)
+                        //service_fj1igvs-old
+                        emailjs.send('service_ckgn4g5', 'template_ggq86uk', replyData)
                             .then(function (replyResponse) {
                                 console.log('Auto-Reply SUCCESS!', replyResponse.status, replyResponse.text);
                             }, function (replyError) {
                                 console.log('Auto-Reply FAILED (but original sent OK)...', replyError);
                             });
 
-                        // ✅ Success Message
+                        //  Success Message
                         formMessage.textContent = "Your message has been sent successfully! You'll receive a confirmation email shortly, and I'll get back to you soon.";
                         formMessage.className = "form-message success";
                         document.getElementById('contactForm').reset();
@@ -649,7 +649,7 @@
                     }, function (error) {
                         console.log('Original Email FAILED...', error);
 
-                        // ❌ Error Message
+                        //  Error Message
                         formMessage.textContent = "Oops! Something went wrong. Please try again or email me directly at lalit.patil@gmail.com.";
                         formMessage.className = "form-message error";
                     })
