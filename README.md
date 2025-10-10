@@ -35,8 +35,12 @@ It highlights my **technical skills, educational background, and hands-on projec
 ![Projects](https://github.com/lalitpatil891/MyPortfolio/blob/main/sc/projects.png)  
 ---
 
+### 📨 Get in Touch  
+![Get in Touch](https://github.com/lalitpatil891/MyPortfolio/blob/main/sc/get-in-toch.png)  
+---
+
 ### 📞 Footer  
-![Footer](https://github.com/lalitpatil891/MyPortfolio/blob/main/sc/projects.png)  
+![Footer](https://github.com/lalitpatil891/MyPortfolio/blob/main/sc/footer.png)
 ---
 
 ## 🛠️ Tech Stack  
